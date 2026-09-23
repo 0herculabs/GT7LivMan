@@ -1,0 +1,18 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+
+[*.cs]
+indent_size = 4
+
+[*.{json,xml,csproj,props,targets}]
+indent_size = 2
+
+# CA1305: culture-dependent number/date formatting is a correctness bug here,
+# not a style nit — an es-ES machine turns 12.5 into "12,5" in SVG path data.
+dotnet_diagnostic.CA1305.severity = error

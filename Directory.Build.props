@@ -1,0 +1,14 @@
+<Project>
+
+  <PropertyGroup>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <AnalysisMode>Default</AnalysisMode>
+  </PropertyGroup>
+
+  <!-- No .pdb files in Release, so the published folder is just the exe + its data folders. -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+</Project>

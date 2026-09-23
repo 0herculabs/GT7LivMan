@@ -1,0 +1,5 @@
+# Vendored third-party source (see LICENSE-ImageTracer.NET.txt) — kept close to upstream rather
+# than reformatted or annotated to this repo's own rules, so this subtree opts out of the
+# CA1305 "error" escalation the root .editorconfig sets for our own code.
+[*.cs]
+dotnet_diagnostic.CA1305.severity = none

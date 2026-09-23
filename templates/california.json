@@ -1,0 +1,3418 @@
+{
+  "SchemaVersion": "1",
+  "CountryCode": "US-CA",
+  "DisplayName": "USA - California",
+  "Size": {
+    "Width": 1728,
+    "Height": 892
+  },
+  "Elements": [
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 106,
+              "Y": 51
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1605,
+                  "Y": 51
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 61,
+                "Ry": 61,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1666,
+                  "Y": 112
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1666,
+                  "Y": 776
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 61,
+                "Ry": 61,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1605,
+                  "Y": 837
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 106,
+                  "Y": 837
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 61,
+                "Ry": 61,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 45,
+                  "Y": 776
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 45,
+                  "Y": 112
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 61,
+                "Ry": 61,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 106,
+                  "Y": 51
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 221,
+        "G": 221,
+        "B": 221
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 106,
+              "Y": 57
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1605,
+                  "Y": 57
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 55,
+                "Ry": 55,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1660,
+                  "Y": 112
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1660,
+                  "Y": 776
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 55,
+                "Ry": 55,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1605,
+                  "Y": 831
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 106,
+                  "Y": 831
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 55,
+                "Ry": 55,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 51,
+                  "Y": 776
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 51,
+                  "Y": 112
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 55,
+                "Ry": 55,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 106,
+                  "Y": 57
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 248,
+        "G": 248,
+        "B": 248
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 110,
+              "Y": 74.5
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1601,
+                  "Y": 74.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 41.5,
+                "Ry": 41.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1642.5,
+                  "Y": 116
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1642.5,
+                  "Y": 772
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 41.5,
+                "Ry": 41.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1601,
+                  "Y": 813.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 110,
+                  "Y": 813.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 41.5,
+                "Ry": 41.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 68.5,
+                  "Y": 772
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 68.5,
+                  "Y": 116
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 41.5,
+                "Ry": 41.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 110,
+                  "Y": 74.5
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 110,
+              "Y": 77.5
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 38.5,
+                "Ry": 38.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 71.5,
+                  "Y": 116
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 71.5,
+                  "Y": 772
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 38.5,
+                "Ry": 38.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 110,
+                  "Y": 810.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1601,
+                  "Y": 810.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 38.5,
+                "Ry": 38.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 1639.5,
+                  "Y": 772
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1639.5,
+                  "Y": 116
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 38.5,
+                "Ry": 38.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 1601,
+                  "Y": 77.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 110,
+                  "Y": 77.5
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 204,
+        "G": 204,
+        "B": 204
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 386,
+              "Y": 127
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 15,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 354,
+                  "Y": 127
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 15,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 386,
+                  "Y": 127
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 1354,
+              "Y": 127
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 15,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1322,
+                  "Y": 127
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 15,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1354,
+                  "Y": 127
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 386,
+              "Y": 774
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 15,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 354,
+                  "Y": 774
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 15,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 386,
+                  "Y": 774
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 1354,
+              "Y": 774
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 15,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1322,
+                  "Y": 774
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 15,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1354,
+                  "Y": 774
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 1393,
+              "Y": 128
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1607,
+                  "Y": 128
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 8,
+                "Ry": 8,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1615,
+                  "Y": 136
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1615,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 8,
+                "Ry": 8,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1607,
+                  "Y": 248
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1393,
+                  "Y": 248
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 8,
+                "Ry": 8,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1385,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1385,
+                  "Y": 136
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 8,
+                "Ry": 8,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 1393,
+                  "Y": 128
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 224,
+        "G": 114,
+        "B": 52
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 1183.5,
+              "Y": 128.14
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1176.9199999999998,
+                  "Y": 133.78
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1175.98,
+                  "Y": 140.35999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1181.62,
+                  "Y": 146.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1185.3799999999999,
+                  "Y": 147.88
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1189.1399999999999,
+                  "Y": 143.17999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1189.1399999999999,
+                  "Y": 131.89999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1186.32,
+                  "Y": 128.14
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 745.4599999999999,
+              "Y": 128.14
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 739.8199999999999,
+                  "Y": 132.83999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 737.9399999999999,
+                  "Y": 139.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 743.5799999999999,
+                  "Y": 146.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 747.3399999999999,
+                  "Y": 147.88
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 751.0999999999999,
+                  "Y": 144.12
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 752.04,
+                  "Y": 135.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 751.0999999999999,
+                  "Y": 130.95999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 748.28,
+                  "Y": 128.14
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 521.74,
+              "Y": 240.94
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 523.62,
+                  "Y": 245.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 526.4399999999999,
+                  "Y": 247.51999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 536.78,
+                  "Y": 247.51999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 543.36,
+                  "Y": 245.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 566.86,
+                  "Y": 232.48
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 586.5999999999999,
+                  "Y": 215.56
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 589.42,
+                  "Y": 233.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 596,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 601.64,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 610.0999999999999,
+                  "Y": 236.23999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 625.14,
+                  "Y": 224.01999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 631.7199999999999,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 642.06,
+                  "Y": 245.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 651.4599999999999,
+                  "Y": 245.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 661.8,
+                  "Y": 241.88
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 671.1999999999999,
+                  "Y": 235.29999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 700.3399999999999,
+                  "Y": 203.33999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 707.86,
+                  "Y": 197.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 711.62,
+                  "Y": 197.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 713.5,
+                  "Y": 199.57999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 713.5,
+                  "Y": 204.28
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 707.86,
+                  "Y": 223.07999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 705.9799999999999,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 709.74,
+                  "Y": 245.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 719.14,
+                  "Y": 245.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 741.6999999999999,
+                  "Y": 234.35999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 774.5999999999999,
+                  "Y": 210.85999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 774.5999999999999,
+                  "Y": 215.56
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 753.92,
+                  "Y": 260.67999999999995
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 734.18,
+                  "Y": 314.26
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 730.42,
+                  "Y": 330.24
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 730.42,
+                  "Y": 342.46
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 733.24,
+                  "Y": 345.28
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 736.06,
+                  "Y": 345.28
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 747.3399999999999,
+                  "Y": 338.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 768.02,
+                  "Y": 319.9
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 784.9399999999999,
+                  "Y": 302.03999999999996
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 795.28,
+                  "Y": 286.06
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 799.04,
+                  "Y": 272.9
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 799.04,
+                  "Y": 265.38
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 795.28,
+                  "Y": 254.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 785.88,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 790.5799999999999,
+                  "Y": 235.29999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 830.06,
+                  "Y": 208.98
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 831.9399999999999,
+                  "Y": 209.92
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 830.06,
+                  "Y": 217.44
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 830.06,
+                  "Y": 232.48
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 831.9399999999999,
+                  "Y": 238.11999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 839.4599999999999,
+                  "Y": 247.51999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 850.7399999999999,
+                  "Y": 251.27999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 862.9599999999999,
+                  "Y": 249.39999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 878.9399999999999,
+                  "Y": 240.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 888.3399999999999,
+                  "Y": 232.48
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 896.8,
+                  "Y": 217.44
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 908.0799999999999,
+                  "Y": 205.22
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 932.52,
+                  "Y": 190.17999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 935.3399999999999,
+                  "Y": 191.11999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 936.28,
+                  "Y": 193.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 923.1199999999999,
+                  "Y": 216.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 919.3599999999999,
+                  "Y": 228.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 921.2399999999999,
+                  "Y": 240.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 927.8199999999999,
+                  "Y": 248.45999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 932.52,
+                  "Y": 250.33999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 942.8599999999999,
+                  "Y": 249.39999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 953.1999999999999,
+                  "Y": 244.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 991.7399999999999,
+                  "Y": 212.73999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1008.66,
+                  "Y": 201.45999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1010.54,
+                  "Y": 203.33999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 997.38,
+                  "Y": 229.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 993.6199999999999,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 993.6199999999999,
+                  "Y": 245.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 996.4399999999999,
+                  "Y": 245.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1005.8399999999999,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1033.1,
+                  "Y": 218.38
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1045.32,
+                  "Y": 210.85999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1054.72,
+                  "Y": 207.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1063.1799999999998,
+                  "Y": 207.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1065.06,
+                  "Y": 215.56
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1065.06,
+                  "Y": 228.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1068.82,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1076.34,
+                  "Y": 246.57999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1085.74,
+                  "Y": 246.57999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1099.84,
+                  "Y": 238.11999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1128.04,
+                  "Y": 208.98
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1145.8999999999999,
+                  "Y": 197.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1151.54,
+                  "Y": 201.45999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1151.54,
+                  "Y": 208.98
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1144.02,
+                  "Y": 233.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1144.96,
+                  "Y": 243.76
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1148.72,
+                  "Y": 246.57999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1160.9399999999998,
+                  "Y": 243.76
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1185.3799999999999,
+                  "Y": 229.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1187.26,
+                  "Y": 241.88
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1193.84,
+                  "Y": 248.45999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1202.3,
+                  "Y": 248.45999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1222.98,
+                  "Y": 238.11999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1250.24,
+                  "Y": 215.56
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1252.12,
+                  "Y": 216.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1254,
+                  "Y": 228.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1257.76,
+                  "Y": 233.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1267.1599999999999,
+                  "Y": 239.05999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1278.4399999999998,
+                  "Y": 241.88
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1297.24,
+                  "Y": 241.88
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1315.1,
+                  "Y": 238.11999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1341.4199999999998,
+                  "Y": 227.78
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1343.3,
+                  "Y": 222.14
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1339.54,
+                  "Y": 220.26
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1323.56,
+                  "Y": 226.83999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1298.1799999999998,
+                  "Y": 232.48
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1285.02,
+                  "Y": 232.48
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1274.6799999999998,
+                  "Y": 228.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1266.22,
+                  "Y": 218.38
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1267.1599999999999,
+                  "Y": 204.28
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1274.6799999999998,
+                  "Y": 184.54
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1274.6799999999998,
+                  "Y": 180.78
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1271.86,
+                  "Y": 180.78
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1259.6399999999999,
+                  "Y": 189.23999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1254,
+                  "Y": 178.89999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1244.6,
+                  "Y": 177.01999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1228.62,
+                  "Y": 182.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1185.3799999999999,
+                  "Y": 217.44
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1163.76,
+                  "Y": 228.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1160.9399999999998,
+                  "Y": 228.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1160,
+                  "Y": 224.95999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1161.8799999999999,
+                  "Y": 223.07999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1169.3999999999999,
+                  "Y": 198.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1169.3999999999999,
+                  "Y": 185.48
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1167.52,
+                  "Y": 182.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1160,
+                  "Y": 181.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1147.78,
+                  "Y": 186.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1128.04,
+                  "Y": 199.57999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1086.6799999999998,
+                  "Y": 234.35999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1083.86,
+                  "Y": 234.35999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1081.98,
+                  "Y": 231.54
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1083.86,
+                  "Y": 210.85999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1082.9199999999998,
+                  "Y": 194.88
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1079.1599999999999,
+                  "Y": 188.29999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1071.6399999999999,
+                  "Y": 186.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1055.6599999999999,
+                  "Y": 192.06
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1031.22,
+                  "Y": 208.98
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1029.34,
+                  "Y": 207.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1029.34,
+                  "Y": 201.45999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1025.58,
+                  "Y": 191.11999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1021.8199999999999,
+                  "Y": 188.29999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1014.3,
+                  "Y": 188.29999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 996.4399999999999,
+                  "Y": 197.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 948.5,
+                  "Y": 234.35999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 938.16,
+                  "Y": 238.11999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 935.3399999999999,
+                  "Y": 235.29999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 935.3399999999999,
+                  "Y": 229.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 949.4399999999999,
+                  "Y": 193.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 953.1999999999999,
+                  "Y": 178.89999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 952.26,
+                  "Y": 174.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 949.4399999999999,
+                  "Y": 172.32
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 941.92,
+                  "Y": 173.26
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 933.4599999999999,
+                  "Y": 177.01999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 901.5,
+                  "Y": 199.57999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 897.7399999999999,
+                  "Y": 197.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 895.8599999999999,
+                  "Y": 189.23999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 888.3399999999999,
+                  "Y": 178.89999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 880.8199999999999,
+                  "Y": 176.07999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 867.66,
+                  "Y": 177.01999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 847.92,
+                  "Y": 186.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 805.62,
+                  "Y": 215.56
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 794.3399999999999,
+                  "Y": 221.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 787.76,
+                  "Y": 222.14
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 786.8199999999999,
+                  "Y": 216.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 815.9599999999999,
+                  "Y": 166.67999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 834.76,
+                  "Y": 125.32
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 836.64,
+                  "Y": 118.74
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 836.64,
+                  "Y": 102.75999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 832.88,
+                  "Y": 97.11999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 830.06,
+                  "Y": 95.24
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 825.3599999999999,
+                  "Y": 95.24
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 819.7199999999999,
+                  "Y": 104.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 810.3199999999999,
+                  "Y": 131.89999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 795.28,
+                  "Y": 165.73999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 778.3599999999999,
+                  "Y": 191.11999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 760.5,
+                  "Y": 208.98
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 738.88,
+                  "Y": 223.07999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 722.9,
+                  "Y": 228.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 721.9599999999999,
+                  "Y": 225.89999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 731.36,
+                  "Y": 193.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 731.36,
+                  "Y": 182.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 728.54,
+                  "Y": 178.89999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 724.78,
+                  "Y": 178.89999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 713.5,
+                  "Y": 184.54
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 660.86,
+                  "Y": 228.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 649.5799999999999,
+                  "Y": 234.35999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 644.88,
+                  "Y": 234.35999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 640.18,
+                  "Y": 228.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 642.06,
+                  "Y": 208.98
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 646.76,
+                  "Y": 207.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 654.28,
+                  "Y": 200.51999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 671.1999999999999,
+                  "Y": 178.89999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 705.04,
+                  "Y": 126.25999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 710.68,
+                  "Y": 114.03999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 711.62,
+                  "Y": 97.11999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 707.86,
+                  "Y": 91.47999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 700.3399999999999,
+                  "Y": 91.47999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 693.76,
+                  "Y": 95.24
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 685.3,
+                  "Y": 103.69999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 666.5,
+                  "Y": 128.14
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 652.4,
+                  "Y": 150.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 624.1999999999999,
+                  "Y": 207.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 611.04,
+                  "Y": 224.95999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 607.28,
+                  "Y": 225.89999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 604.4599999999999,
+                  "Y": 223.07999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 604.4599999999999,
+                  "Y": 202.39999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 607.28,
+                  "Y": 188.29999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 606.3399999999999,
+                  "Y": 182.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 594.12,
+                  "Y": 184.54
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 581.9,
+                  "Y": 181.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 568.74,
+                  "Y": 181.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 553.6999999999999,
+                  "Y": 188.29999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 532.0799999999999,
+                  "Y": 210.85999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 523.62,
+                  "Y": 224.95999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 521.74,
+                  "Y": 230.6
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 780.24,
+              "Y": 249.39999999999998
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 787.76,
+                  "Y": 257.86
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 788.6999999999999,
+                  "Y": 267.26
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 785.88,
+                  "Y": 277.59999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 776.4799999999999,
+                  "Y": 295.46
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 760.5,
+                  "Y": 319.9
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 752.9799999999999,
+                  "Y": 327.41999999999996
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 750.16,
+                  "Y": 327.41999999999996
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 748.28,
+                  "Y": 325.53999999999996
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 764.26,
+                  "Y": 272.9
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 773.66,
+                  "Y": 253.16
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 586.5999999999999,
+              "Y": 196.76
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 587.54,
+                  "Y": 201.45999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 556.52,
+                  "Y": 230.6
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 546.18,
+                  "Y": 236.23999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 538.66,
+                  "Y": 236.23999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 534.9,
+                  "Y": 232.48
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 533.9599999999999,
+                  "Y": 228.72
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 536.78,
+                  "Y": 223.07999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 554.64,
+                  "Y": 207.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 577.1999999999999,
+                  "Y": 193.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 583.78,
+                  "Y": 193.94
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 1250.24,
+              "Y": 193.94
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1250.24,
+                  "Y": 201.45999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1223.9199999999998,
+                  "Y": 226.83999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1210.76,
+                  "Y": 234.35999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1206.06,
+                  "Y": 235.29999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1199.48,
+                  "Y": 231.54
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1202.3,
+                  "Y": 222.14
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1222.04,
+                  "Y": 203.33999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1240.84,
+                  "Y": 192.06
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 1248.36,
+                  "Y": 192.06
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 878.9399999999999,
+              "Y": 190.17999999999998
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 882.6999999999999,
+                  "Y": 193.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 882.6999999999999,
+                  "Y": 203.33999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 885.52,
+                  "Y": 208.04
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 882.6999999999999,
+                  "Y": 218.38
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 875.18,
+                  "Y": 229.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 864.8399999999999,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 858.26,
+                  "Y": 243.76
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 850.7399999999999,
+                  "Y": 243.76
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 846.04,
+                  "Y": 239.05999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 845.0999999999999,
+                  "Y": 224.01999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 848.8599999999999,
+                  "Y": 214.61999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 862.9599999999999,
+                  "Y": 197.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 874.2399999999999,
+                  "Y": 190.17999999999998
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 700.3399999999999,
+              "Y": 113.1
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 701.28,
+                  "Y": 116.86
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 674.02,
+                  "Y": 161.98
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 660.86,
+                  "Y": 179.84
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 655.2199999999999,
+                  "Y": 185.48
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 650.52,
+                  "Y": 187.35999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 649.5799999999999,
+                  "Y": 183.6
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 672.14,
+                  "Y": 141.29999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 696.5799999999999,
+                  "Y": 114.03999999999999
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 530.1999999999999,
+              "Y": 82.08
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 523.62,
+                  "Y": 80.19999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 513.28,
+                  "Y": 82.08
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 492.59999999999997,
+                  "Y": 95.24
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 462.52,
+                  "Y": 126.25999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 438.08,
+                  "Y": 161.98
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 427.73999999999995,
+                  "Y": 182.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 422.09999999999997,
+                  "Y": 200.51999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 420.21999999999997,
+                  "Y": 213.67999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 422.09999999999997,
+                  "Y": 233.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 425.85999999999996,
+                  "Y": 240.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 432.44,
+                  "Y": 246.57999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 443.71999999999997,
+                  "Y": 250.33999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 456.88,
+                  "Y": 250.33999999999997
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 471.91999999999996,
+                  "Y": 244.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 500.12,
+                  "Y": 223.07999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 535.8399999999999,
+                  "Y": 187.35999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 537.7199999999999,
+                  "Y": 183.6
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 537.7199999999999,
+                  "Y": 177.01999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 523.62,
+                  "Y": 186.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 483.2,
+                  "Y": 223.07999999999998
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 455.94,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 449.35999999999996,
+                  "Y": 241.88
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 443.71999999999997,
+                  "Y": 240.94
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 437.14,
+                  "Y": 233.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 436.2,
+                  "Y": 216.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 439.02,
+                  "Y": 204.28
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 467.21999999999997,
+                  "Y": 148.82
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 486.96,
+                  "Y": 120.61999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 507.64,
+                  "Y": 100.88
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 524.56,
+                  "Y": 91.47999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 529.26,
+                  "Y": 91.47999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 533.02,
+                  "Y": 95.24
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 532.0799999999999,
+                  "Y": 104.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 523.62,
+                  "Y": 120.61999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 500.12,
+                  "Y": 156.34
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 499.17999999999995,
+                  "Y": 161.98
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 504.81999999999994,
+                  "Y": 160.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 515.16,
+                  "Y": 151.64
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 528.3199999999999,
+                  "Y": 135.66
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 533.9599999999999,
+                  "Y": 123.44
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 537.7199999999999,
+                  "Y": 109.33999999999999
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 537.7199999999999,
+                  "Y": 92.42
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 535.8399999999999,
+                  "Y": 87.72
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "EvenOdd"
+      },
+      "Fill": {
+        "R": 185,
+        "G": 67,
+        "B": 33
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 121,
+              "Y": 128
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 335,
+                  "Y": 128
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 8,
+                "Ry": 8,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 343,
+                  "Y": 136
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 343,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 8,
+                "Ry": 8,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 335,
+                  "Y": 248
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 121,
+                  "Y": 248
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 8,
+                "Ry": 8,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 113,
+                  "Y": 240
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 113,
+                  "Y": 136
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 8,
+                "Ry": 8,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 121,
+                  "Y": 128
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 28,
+        "G": 78,
+        "B": 156
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "plateNumber",
+      "Fill": {
+        "R": 23,
+        "G": 23,
+        "B": 23
+      },
+      "CharStart": 0,
+      "CharCount": -1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 864,
+        "F": 780
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "month",
+      "Fill": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "CharStart": 0,
+      "CharCount": -1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 228,
+        "F": 221
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "year",
+      "Fill": {
+        "R": 23,
+        "G": 23,
+        "B": 23
+      },
+      "CharStart": 0,
+      "CharCount": -1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 1500,
+        "F": 213
+      }
+    }
+  ],
+  "Fields": [
+    {
+      "Id": "plateNumber",
+      "Label": "N\u00FAmero de matr\u00EDcula",
+      "Mask": "XXXXXXX",
+      "AllowedLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "CharHeight": 340,
+      "Tracking": 188,
+      "SpaceTracking": 188,
+      "PreferredFontFamily": "LICENSE PLATE USA",
+      "FallbackFontFamilies": [
+        "Roboto Condensed",
+        "Overpass"
+      ],
+      "DropdownOptions": null,
+      "RequireDropdownSelection": false,
+      "RandomYearMin": null,
+      "RandomizeAsLetterAndDigitBlocks": false,
+      "RandomMonthDigitsStart": null,
+      "RandomTwoDigitYearDigits": null
+    },
+    {
+      "Id": "month",
+      "Label": "Mes",
+      "Mask": "AAA",
+      "AllowedLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "CharHeight": 65,
+      "Tracking": 63,
+      "SpaceTracking": 63,
+      "PreferredFontFamily": "CharlesWright-Bold",
+      "FallbackFontFamilies": [
+        "Roboto Condensed",
+        "Overpass"
+      ],
+      "DropdownOptions": [
+        "JAN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAY",
+        "JUN",
+        "JUL",
+        "AUG",
+        "SEP",
+        "OCT",
+        "NOV",
+        "DEC"
+      ],
+      "RequireDropdownSelection": true,
+      "RandomYearMin": null,
+      "RandomizeAsLetterAndDigitBlocks": false,
+      "RandomMonthDigitsStart": null,
+      "RandomTwoDigitYearDigits": null
+    },
+    {
+      "Id": "year",
+      "Label": "A\u00F1o",
+      "Mask": "9999",
+      "AllowedLetters": "",
+      "CharHeight": 50,
+      "Tracking": 48,
+      "SpaceTracking": 48,
+      "PreferredFontFamily": "CharlesWright-Bold",
+      "FallbackFontFamilies": [
+        "Roboto Condensed",
+        "Overpass"
+      ],
+      "DropdownOptions": null,
+      "RequireDropdownSelection": false,
+      "RandomYearMin": 1990,
+      "RandomizeAsLetterAndDigitBlocks": false,
+      "RandomMonthDigitsStart": null,
+      "RandomTwoDigitYearDigits": null
+    }
+  ]
+}

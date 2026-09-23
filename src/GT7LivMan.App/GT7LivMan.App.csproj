@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\GT7LivMan.Core\GT7LivMan.Core.csproj" />
+    <ProjectReference Include="..\GT7LivMan.Typography.Wpf\GT7LivMan.Typography.Wpf.csproj" />
+    <ProjectReference Include="..\GT7LivMan.Vectorization\GT7LivMan.Vectorization.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>..\..\assets\icon.ico</ApplicationIcon>
+    <AssemblyName>GT7LivMan</AssemblyName>
+    <Version>0.5.0</Version>
+    <Product>GT7LivMan</Product>
+    <Company>herculabs</Company>
+    <Copyright>© 2026 herculabs</Copyright>
+  </PropertyGroup>
+
+  <!-- Same icon as a WPF resource so the window title bar / taskbar pick it up too. -->
+  <ItemGroup>
+    <Resource Include="..\..\assets\icon.ico" Link="icon.ico" />
+  </ItemGroup>
+
+  <!-- Release publish: self-contained win-x64, so the target PC needs no .NET install.
+       Single-file bundles the runtime + DLLs into one exe; templates/ and fonts/ stay as
+       loose folders next to it (they are loaded from AppContext.BaseDirectory). -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+  </PropertyGroup>
+
+  <!-- Templates and fonts live at the repo root (shared with the tests), not under this project —
+       copy them next to the exe so FontResolver's default fonts/ lookup and the template loader
+       (both AppContext.BaseDirectory-relative) find them at run time. -->
+  <ItemGroup>
+    <None Include="..\..\templates\**\*.json">
+      <Link>templates\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </None>
+    <!-- Plate fonts are personal-use only: copied for local runs, never into a published release,
+         which ships just the placeholder txt telling users to drop their own fonts there. -->
+    <None Include="..\..\fonts\*.otf;..\..\fonts\*.ttf">
+      <Link>fonts\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+    <None Include="..\..\fonts\PUT_FONTS_HERE.txt">
+      <Link>fonts\PUT_FONTS_HERE.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </None>
+    <None Include="..\..\fonts-bundled\*.otf;..\..\fonts-bundled\*.ttf;..\..\fonts-bundled\*.txt">
+      <Link>fonts-bundled\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,229 @@
+<Window x:Class="GT7LivMan.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GT7LivMan.App"
+        xmlns:conv="clr-namespace:GT7LivMan.App.Converters"
+        mc:Ignorable="d"
+        Title="GT7LivMan" Height="650" Width="1000"
+        MinHeight="560" MinWidth="820"
+        ResizeMode="NoResize"
+        Icon="pack://application:,,,/icon.ico"
+        Background="#FF1E1E1E">
+    <Window.Resources>
+        <conv:BoolToBrushConverter x:Key="BudgetBrush" TrueBrush="#FFE05252" FalseBrush="#FF6FCF6F" />
+
+        <!-- Most fields are a plain text box; a field with DropdownOptions (California's month
+             picker) instead gets an editable combo — picking a value is a shortcut, typing
+             anything else still works, same as everywhere else in this app. -->
+        <DataTemplate x:Key="PlainFieldTemplate">
+            <StackPanel Margin="0,0,0,8">
+                <TextBlock Text="{Binding Label}" Foreground="#FFB0B0B0" Margin="0,0,0,4" />
+                <TextBox Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}"
+                         FontSize="20" Padding="6" CharacterCasing="Upper" />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="DropdownFieldTemplate">
+            <StackPanel Margin="0,0,0,8">
+                <TextBlock Text="{Binding Label}" Foreground="#FFB0B0B0" Margin="0,0,0,4" />
+                <ComboBox ItemsSource="{Binding DropdownOptions}"
+                          Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}"
+                          IsEditable="True" FontSize="20" Padding="6" />
+            </StackPanel>
+        </DataTemplate>
+        <!-- A closed picker (California's month): free text isn't a valid month abbreviation, so
+             this binds SelectedItem instead of Text and stays non-editable. -->
+        <DataTemplate x:Key="RestrictedDropdownFieldTemplate">
+            <StackPanel Margin="0,0,0,8">
+                <TextBlock Text="{Binding Label}" Foreground="#FFB0B0B0" Margin="0,0,0,4" />
+                <ComboBox ItemsSource="{Binding DropdownOptions}"
+                          SelectedItem="{Binding Value, UpdateSourceTrigger=PropertyChanged}"
+                          IsEditable="False" FontSize="20" Padding="6" />
+            </StackPanel>
+        </DataTemplate>
+        <local:FieldInputTemplateSelector x:Key="FieldInputTemplateSelector"
+                                           PlainTemplate="{StaticResource PlainFieldTemplate}"
+                                           DropdownTemplate="{StaticResource DropdownFieldTemplate}"
+                                           RestrictedDropdownTemplate="{StaticResource RestrictedDropdownFieldTemplate}" />
+        <BooleanToVisibilityConverter x:Key="BoolToVisibility" />
+
+        <!-- Shared by both tabs' export buttons: green and bold when enabled, dim when not, a
+             touch brighter on hover. -->
+        <Style x:Key="ExportButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="0,16,0,0" />
+            <Setter Property="Padding" Value="10,10" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Background" Value="#FF2E9E4F" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Opacity" Value="1" />
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Opacity" Value="0.4" />
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF37B85D" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="GeneratorTabStyle" TargetType="TabItem">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="#FFD8D8D8" />
+            <Setter Property="Background" Value="#FF343434" />
+            <Setter Property="Padding" Value="28,12" />
+            <Setter Property="MinWidth" Value="245" />
+            <Setter Property="Margin" Value="0,0,6,0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="#FF555555" BorderThickness="1"
+                                CornerRadius="7,7,0,0" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter ContentSource="Header"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Foreground" Value="White" />
+                    <Setter Property="Background" Value="#FF2878B8" />
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF3B8FCC" />
+                    <Setter Property="Foreground" Value="White" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Margin="16,10,16,8">
+            <TextBlock Text="GT7LivMan" Foreground="White" FontSize="22" FontWeight="Bold"
+                       VerticalAlignment="Center" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <TextBlock x:Name="LanguageLabel" Text="Language" Foreground="#FFD0D0D0"
+                           FontSize="14" VerticalAlignment="Center" Margin="0,0,10,0" />
+                <ComboBox x:Name="LanguageSelector" Width="130" FontSize="14" Padding="6,4"
+                          SelectionChanged="LanguageSelector_SelectionChanged" />
+            </StackPanel>
+        </Grid>
+
+        <TabControl Grid.Row="1" Background="#FF1E1E1E" BorderThickness="0"
+                    ItemContainerStyle="{StaticResource GeneratorTabStyle}">
+        <TabItem x:Name="VinylTab" Header="SVG Generator">
+            <Grid x:Name="VinylPanel">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <ScrollViewer x:Name="SvgScrollViewer" Grid.Column="0" VerticalScrollBarVisibility="Auto">
+                    <StackPanel Margin="16">
+                        <Button x:Name="LoadImageButton" Content="Load image..." Padding="10,8"
+                                Click="LoadImageButton_Click" />
+
+                        <TextBlock Text="{Binding StatusMessage}" Foreground="#FFB0B0B0"
+                                   TextWrapping="Wrap" Margin="0,12,0,0" />
+
+                        <StackPanel Visibility="{Binding IsRasterLoaded, Converter={StaticResource BoolToVisibility}}"
+                                    Margin="0,16,0,0">
+                            <TextBlock Foreground="#FFB0B0B0" Margin="0,0,0,4">
+                                <Run x:Name="ColorsLabelRun" Text="Colors: " /><Run Text="{Binding ColorCount, Mode=OneWay}" />
+                            </TextBlock>
+                            <Slider Minimum="2" Maximum="16" Value="{Binding ColorCount}"
+                                    TickFrequency="1" IsSnapToTickEnabled="True" />
+
+                            <TextBlock x:Name="SimplificationLabel"
+                                       Text="Simplification (further right = less detail, fewer KB)"
+                                       Foreground="#FFB0B0B0" TextWrapping="Wrap" Margin="0,12,0,4" />
+                            <Slider Minimum="0.2" Maximum="4" Value="{Binding Simplification}" />
+                        </StackPanel>
+
+                        <ItemsControl ItemsSource="{Binding Warnings}" Margin="0,16,0,0">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" Foreground="#FFE0B050"
+                                               TextWrapping="Wrap" FontSize="12" Margin="0,0,0,6" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+                        <Separator Margin="0,20,0,20" />
+
+                        <TextBlock x:Name="VinylSizeLabel" Text="SVG size (GT7 limit: 15 KB)"
+                                   Foreground="#FFB0B0B0" Margin="0,0,0,4" />
+                        <TextBlock Text="{Binding SizeLabel}"
+                                   FontSize="18" FontWeight="Bold"
+                                   Foreground="{Binding IsOverBudget, Converter={StaticResource BudgetBrush}}" />
+
+                        <Button x:Name="ExportVinylButton" Content="Export SVG..." Style="{StaticResource ExportButtonStyle}"
+                                IsEnabled="{Binding CanExport}" Click="ExportVinylButton_Click" />
+                    </StackPanel>
+                </ScrollViewer>
+
+                <Border Grid.Column="1" Background="#FF2A2A2A" Margin="0,16,16,16" CornerRadius="4">
+                    <Image Source="{Binding PreviewImage}" Stretch="Uniform" Margin="24" />
+                </Border>
+            </Grid>
+        </TabItem>
+
+        <TabItem x:Name="PlateTab" Header="License Plate Generator">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Left panel: field input, validation, font/size status, export. Scrollable
+                     because the number of fields varies per template (California's 3 vs. Spain's
+                     1) and shouldn't be able to push the export button off the bottom of a
+                     fixed-height window. -->
+                <ScrollViewer x:Name="PlateScrollViewer" Grid.Column="0" VerticalScrollBarVisibility="Auto">
+                    <StackPanel Margin="16">
+                        <TextBlock x:Name="CountryTemplateLabel" Text="Country / template" Foreground="#FFB0B0B0" Margin="0,0,0,4" />
+                        <ComboBox x:Name="TemplateSelector"
+                                  ItemsSource="{Binding AvailableTemplates}"
+                                  SelectedItem="{Binding SelectedTemplate}"
+                                  DisplayMemberPath="LocalizedDisplayName"
+                                  FontSize="16" Padding="6" Margin="0,0,0,10" />
+
+                        <ItemsControl ItemsSource="{Binding FieldInputs}"
+                                      ItemTemplateSelector="{StaticResource FieldInputTemplateSelector}" />
+
+                        <Button x:Name="RandomizeButton" Content="Random license plate" Padding="10,8"
+                                Click="RandomizeButton_Click" />
+
+                        <Separator Margin="0,12,0,12" />
+
+                        <TextBlock x:Name="PlateSizeLabel" Text="SVG size (GT7 limit: 15 KB)"
+                                   Foreground="#FFB0B0B0" Margin="0,0,0,4" />
+                        <TextBlock Text="{Binding SizeLabel}"
+                                   FontSize="18" FontWeight="Bold"
+                                   Foreground="{Binding IsOverBudget, Converter={StaticResource BudgetBrush}}" />
+
+                        <Button x:Name="ExportButton" Content="Export SVG..." Style="{StaticResource ExportButtonStyle}"
+                                IsEnabled="{Binding IsValid}" Click="ExportButton_Click" />
+                    </StackPanel>
+                </ScrollViewer>
+
+                <!-- Right: live preview -->
+                <Border Grid.Column="1" Background="#FF2A2A2A" Margin="0,16,16,16" CornerRadius="4">
+                    <Image Source="{Binding PreviewImage}" Stretch="Uniform" Margin="24" />
+                </Border>
+            </Grid>
+        </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

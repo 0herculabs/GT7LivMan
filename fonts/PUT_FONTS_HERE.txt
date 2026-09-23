@@ -1,0 +1,7 @@
+Put fonts here.
+
+Copy the plate font files (.otf / .ttf) into this folder without renaming them,
+then restart GT7LivMan. See the README for which file each template uses.
+
+Copia aqui los archivos de fuente (.otf / .ttf) sin cambiarles el nombre
+y reinicia GT7LivMan. El README indica que archivo usa cada plantilla.

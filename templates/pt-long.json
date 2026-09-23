@@ -1,0 +1,2189 @@
+{
+  "SchemaVersion": "1",
+  "CountryCode": "PT",
+  "DisplayName": "Portugal - License v2",
+  "Size": {
+    "Width": 1024,
+    "Height": 500
+  },
+  "Elements": [
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 53,
+              "Y": 149
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 971,
+                  "Y": 149
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 24,
+                "Ry": 24,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 995,
+                  "Y": 173
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 995,
+                  "Y": 339
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 24,
+                "Ry": 24,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 971,
+                  "Y": 363
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 53,
+                  "Y": 363
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 24,
+                "Ry": 24,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 29,
+                  "Y": 339
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 29,
+                  "Y": 173
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 24,
+                "Ry": 24,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 53,
+                  "Y": 149
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 17,
+        "G": 17,
+        "B": 17
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 53,
+              "Y": 153
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 971,
+                  "Y": 153
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 20,
+                "Ry": 20,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 991,
+                  "Y": 173
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 991,
+                  "Y": 339
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 20,
+                "Ry": 20,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 971,
+                  "Y": 359
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 53,
+                  "Y": 359
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 20,
+                "Ry": 20,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 33,
+                  "Y": 339
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 33,
+                  "Y": 173
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 20,
+                "Ry": 20,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 53,
+                  "Y": 153
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 247,
+        "G": 247,
+        "B": 247
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 54,
+              "Y": 156
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 970,
+                  "Y": 156
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 18,
+                "Ry": 18,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 988,
+                  "Y": 174
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 988,
+                  "Y": 338
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 18,
+                "Ry": 18,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 970,
+                  "Y": 356
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 54,
+                  "Y": 356
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 18,
+                "Ry": 18,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 36,
+                  "Y": 338
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 36,
+                  "Y": 174
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 18,
+                "Ry": 18,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 54,
+                  "Y": 156
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 54,
+              "Y": 158
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 16,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 38,
+                  "Y": 174
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 38,
+                  "Y": 338
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 16,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 54,
+                  "Y": 354
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 970,
+                  "Y": 354
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 16,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 986,
+                  "Y": 338
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 986,
+                  "Y": 174
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 16,
+                "Ry": 16,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 970,
+                  "Y": 158
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 54,
+                  "Y": 158
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 17,
+        "G": 17,
+        "B": 17
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 54,
+              "Y": 157
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 120,
+                  "Y": 157
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 120,
+                  "Y": 355
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 54,
+                  "Y": 355
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 17,
+                "Ry": 17,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 37,
+                  "Y": 338
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 37,
+                  "Y": 174
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 17,
+                "Ry": 17,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 54,
+                  "Y": 157
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 13,
+        "G": 70,
+        "B": 181
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 897,
+              "Y": 157
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 970,
+                  "Y": 157
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 17,
+                "Ry": 17,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 987,
+                  "Y": 174
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 987,
+                  "Y": 338
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 17,
+                "Ry": 17,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 970,
+                  "Y": 355
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 897,
+                  "Y": 355
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 246,
+        "G": 230,
+        "B": 65
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 79,
+              "Y": 171
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 80.3,
+                  "Y": 174.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 83.8,
+                  "Y": 174.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 81.1,
+                  "Y": 176.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 81.9,
+                  "Y": 180
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 79,
+                  "Y": 178.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 76.1,
+                  "Y": 180
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 76.9,
+                  "Y": 176.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 74.2,
+                  "Y": 174.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 77.7,
+                  "Y": 174.2
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 92.5,
+              "Y": 174.6
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 93.8,
+                  "Y": 177.8
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 97.3,
+                  "Y": 178.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 94.6,
+                  "Y": 180.3
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 95.4,
+                  "Y": 183.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 92.5,
+                  "Y": 181.8
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 89.6,
+                  "Y": 183.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 90.4,
+                  "Y": 180.3
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 87.7,
+                  "Y": 178.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 91.2,
+                  "Y": 177.8
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 102.4,
+              "Y": 184.5
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 103.7,
+                  "Y": 187.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 107.1,
+                  "Y": 188
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 104.5,
+                  "Y": 190.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 105.3,
+                  "Y": 193.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 102.4,
+                  "Y": 191.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 99.4,
+                  "Y": 193.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 100.3,
+                  "Y": 190.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 97.6,
+                  "Y": 188
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 101.1,
+                  "Y": 187.7
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 106,
+              "Y": 198
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 107.3,
+                  "Y": 201.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 110.8,
+                  "Y": 201.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 108.1,
+                  "Y": 203.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 108.9,
+                  "Y": 207
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 106,
+                  "Y": 205.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 103.1,
+                  "Y": 207
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 103.9,
+                  "Y": 203.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 101.2,
+                  "Y": 201.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 104.7,
+                  "Y": 201.2
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 102.4,
+              "Y": 211.5
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 103.7,
+                  "Y": 214.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 107.1,
+                  "Y": 215
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 104.5,
+                  "Y": 217.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 105.3,
+                  "Y": 220.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 102.4,
+                  "Y": 218.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 99.4,
+                  "Y": 220.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 100.3,
+                  "Y": 217.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 97.6,
+                  "Y": 215
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 101.1,
+                  "Y": 214.7
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 92.5,
+              "Y": 221.4
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 93.8,
+                  "Y": 224.6
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 97.3,
+                  "Y": 224.8
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 94.6,
+                  "Y": 227.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 95.4,
+                  "Y": 230.4
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 92.5,
+                  "Y": 228.6
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 89.6,
+                  "Y": 230.4
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 90.4,
+                  "Y": 227.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 87.7,
+                  "Y": 224.8
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 91.2,
+                  "Y": 224.6
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 79,
+              "Y": 225
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 80.3,
+                  "Y": 228.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 83.8,
+                  "Y": 228.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 81.1,
+                  "Y": 230.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 81.9,
+                  "Y": 234
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 79,
+                  "Y": 232.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 76.1,
+                  "Y": 234
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 76.9,
+                  "Y": 230.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 74.2,
+                  "Y": 228.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 77.7,
+                  "Y": 228.2
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 65.5,
+              "Y": 221.4
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 66.8,
+                  "Y": 224.6
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 70.3,
+                  "Y": 224.8
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 67.6,
+                  "Y": 227.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 68.4,
+                  "Y": 230.4
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 65.5,
+                  "Y": 228.6
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 62.6,
+                  "Y": 230.4
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 63.4,
+                  "Y": 227.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 60.7,
+                  "Y": 224.8
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 64.2,
+                  "Y": 224.6
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 55.6,
+              "Y": 211.5
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 56.9,
+                  "Y": 214.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 60.4,
+                  "Y": 215
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 57.7,
+                  "Y": 217.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 58.6,
+                  "Y": 220.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 55.6,
+                  "Y": 218.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 52.7,
+                  "Y": 220.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 53.5,
+                  "Y": 217.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 50.9,
+                  "Y": 215
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 54.3,
+                  "Y": 214.7
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 52,
+              "Y": 198
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 53.3,
+                  "Y": 201.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 56.8,
+                  "Y": 201.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 54.1,
+                  "Y": 203.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 54.9,
+                  "Y": 207
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 52,
+                  "Y": 205.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 49.1,
+                  "Y": 207
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 49.9,
+                  "Y": 203.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 47.2,
+                  "Y": 201.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 50.7,
+                  "Y": 201.2
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 55.6,
+              "Y": 184.5
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 56.9,
+                  "Y": 187.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 60.4,
+                  "Y": 188
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 57.7,
+                  "Y": 190.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 58.6,
+                  "Y": 193.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 55.6,
+                  "Y": 191.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 52.7,
+                  "Y": 193.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 53.5,
+                  "Y": 190.2
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 50.9,
+                  "Y": 188
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 54.3,
+                  "Y": 187.7
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 65.5,
+              "Y": 174.6
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 66.8,
+                  "Y": 177.8
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 70.3,
+                  "Y": 178.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 67.6,
+                  "Y": 180.3
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 68.4,
+                  "Y": 183.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 65.5,
+                  "Y": 181.8
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 62.6,
+                  "Y": 183.7
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 63.4,
+                  "Y": 180.3
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 60.7,
+                  "Y": 178.1
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 64.2,
+                  "Y": 177.8
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 54.76171875,
+              "Y": 265.84765625
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 79.46875,
+                  "Y": 265.84765625
+                }
+              },
+              {
+                "$type": "quad",
+                "C": {
+                  "X": 90.51171875,
+                  "Y": 265.84765625
+                },
+                "To": {
+                  "X": 96.3984375,
+                  "Y": 271.283203125
+                }
+              },
+              {
+                "$type": "quad",
+                "C": {
+                  "X": 102.28515625,
+                  "Y": 276.71875
+                },
+                "To": {
+                  "X": 102.28515625,
+                  "Y": 286.7734375
+                }
+              },
+              {
+                "$type": "quad",
+                "C": {
+                  "X": 102.28515625,
+                  "Y": 296.87109375
+                },
+                "To": {
+                  "X": 96.3984375,
+                  "Y": 302.306640625
+                }
+              },
+              {
+                "$type": "quad",
+                "C": {
+                  "X": 90.51171875,
+                  "Y": 307.7421875
+                },
+                "To": {
+                  "X": 79.46875,
+                  "Y": 307.7421875
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 69.671875,
+                  "Y": 307.7421875
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 69.671875,
+                  "Y": 330
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 54.76171875,
+                  "Y": 330
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 69.671875,
+              "Y": 277.8359375
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 69.671875,
+                  "Y": 295.75390625
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 77.87890625,
+                  "Y": 295.75390625
+                }
+              },
+              {
+                "$type": "quad",
+                "C": {
+                  "X": 82.21875,
+                  "Y": 295.75390625
+                },
+                "To": {
+                  "X": 84.58203125,
+                  "Y": 293.412109375
+                }
+              },
+              {
+                "$type": "quad",
+                "C": {
+                  "X": 86.9453125,
+                  "Y": 291.0703125
+                },
+                "To": {
+                  "X": 86.9453125,
+                  "Y": 286.7734375
+                }
+              },
+              {
+                "$type": "quad",
+                "C": {
+                  "X": 86.9453125,
+                  "Y": 282.4765625
+                },
+                "To": {
+                  "X": 84.58203125,
+                  "Y": 280.15625
+                }
+              },
+              {
+                "$type": "quad",
+                "C": {
+                  "X": 82.21875,
+                  "Y": 277.8359375
+                },
+                "To": {
+                  "X": 77.87890625,
+                  "Y": 277.8359375
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 239,
+        "G": 239,
+        "B": 239
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 375,
+              "Y": 256
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 7,
+                "Ry": 7,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 361,
+                  "Y": 256
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 7,
+                "Ry": 7,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 375,
+                  "Y": 256
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 17,
+        "G": 17,
+        "B": 17
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 632,
+              "Y": 256
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 7,
+                "Ry": 7,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 618,
+                  "Y": 256
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 7,
+                "Ry": 7,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 632,
+                  "Y": 256
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 17,
+        "G": 17,
+        "B": 17
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 905,
+              "Y": 259
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 979,
+                  "Y": 259
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 979,
+                  "Y": 264
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 905,
+                  "Y": 264
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 17,
+        "G": 17,
+        "B": 17
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "plateNumber",
+      "Fill": {
+        "R": 17,
+        "G": 17,
+        "B": 17
+      },
+      "CharStart": 0,
+      "CharCount": -1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 496.5,
+        "F": 326
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "inspectionDate",
+      "Fill": {
+        "R": 17,
+        "G": 17,
+        "B": 17
+      },
+      "CharStart": 0,
+      "CharCount": 2,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 942,
+        "F": 242
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "inspectionDate",
+      "Fill": {
+        "R": 17,
+        "G": 17,
+        "B": 17
+      },
+      "CharStart": 2,
+      "CharCount": 2,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 942,
+        "F": 321
+      }
+    }
+  ],
+  "Fields": [
+    {
+      "Id": "plateNumber",
+      "Label": "N\u00FAmero de matr\u00EDcula",
+      "Mask": "XX XX XX",
+      "AllowedLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "CharHeight": 142,
+      "Tracking": 95,
+      "SpaceTracking": 67,
+      "PreferredFontFamily": "DIN1451",
+      "FallbackFontFamilies": [
+        "Roboto Condensed",
+        "Overpass"
+      ],
+      "DropdownOptions": null,
+      "RequireDropdownSelection": false,
+      "RandomYearMin": null,
+      "RandomizeAsLetterAndDigitBlocks": true,
+      "RandomMonthDigitsStart": null,
+      "RandomTwoDigitYearDigits": null
+    },
+    {
+      "Id": "inspectionDate",
+      "Label": "Fecha ITV (mes/a\u00F1o)",
+      "Mask": "9999",
+      "AllowedLetters": "",
+      "CharHeight": 50,
+      "Tracking": 37,
+      "SpaceTracking": 37,
+      "PreferredFontFamily": "DIN1451",
+      "FallbackFontFamilies": [
+        "Roboto Condensed",
+        "Overpass"
+      ],
+      "DropdownOptions": null,
+      "RequireDropdownSelection": false,
+      "RandomYearMin": null,
+      "RandomizeAsLetterAndDigitBlocks": false,
+      "RandomMonthDigitsStart": 0,
+      "RandomTwoDigitYearDigits": {
+        "Start": 2,
+        "MinTwoDigitYear": 90
+      }
+    }
+  ]
+}
