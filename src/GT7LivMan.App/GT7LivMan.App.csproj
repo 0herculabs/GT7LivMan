@@ -14,7 +14,7 @@
     <UseWPF>true</UseWPF>
     <ApplicationIcon>..\..\assets\icon.ico</ApplicationIcon>
     <AssemblyName>GT7LivMan</AssemblyName>
-    <Version>0.5.0</Version>
+    <Version>0.6.0</Version>
     <Product>GT7LivMan</Product>
     <Company>herculabs</Company>
     <Copyright>© 2026 herculabs</Copyright>

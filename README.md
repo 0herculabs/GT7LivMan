@@ -13,7 +13,7 @@ The interface opens in English and can be switched to Spanish from the language 
 
 ## Installation
 
-1. Download `GT7LivMan-v0.5.zip` from [Releases](../../releases) and unzip it into any folder.
+1. Download `GT7LivMan-v0.6.zip` from [Releases](../../releases) and unzip it into any folder.
 2. Run `GT7LivMan.exe`.
 
 Nothing else needs to be installed (64-bit Windows 10/11). The `templates`, `fonts` and `fonts-bundled` folders must stay next to the exe.
