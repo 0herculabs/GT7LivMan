@@ -11,6 +11,12 @@ public class TextMetricsTests
         Assert.Equal((6 * 95) + (2 * 67), TextMetrics.AdvanceWidth("12 AB 34", tracking: 95, spaceTracking: 67));
     }
 
+    [Fact]
+    public void AdvanceWidth_UsesTheNarrowerPitchForVisibleSeparatorsToo()
+    {
+        Assert.Equal((6 * 47) + (2 * 33), TextMetrics.AdvanceWidth("29-KTV-7", tracking: 47, spaceTracking: 33));
+    }
+
     [Theory]
     [InlineData(TextAnchor.Left, 0)]
     [InlineData(TextAnchor.Center, -350)]

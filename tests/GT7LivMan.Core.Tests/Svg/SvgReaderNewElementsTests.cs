@@ -22,6 +22,30 @@ public class SvgReaderNewElementsTests
     }
 
     [Fact]
+    public void ReadStaticShapes_ImportsStrokedCircleAsRimThenFill()
+    {
+        string svg = "<svg xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"10\" cy=\"20\" r=\"5\" fill=\"#112233\" stroke=\"#445566\" stroke-width=\"2\"/></svg>";
+        var shapes = SvgReader.ReadStaticShapes(svg);
+
+        Assert.Equal(2, shapes.Count);
+        Assert.Equal(RgbColor.Parse("#445566"), shapes[0].Fill);
+        Assert.Equal(new Pt(16, 20), shapes[0].Path.SubPaths[0].Start); // r + half the stroke
+        Assert.Equal(RgbColor.Parse("#112233"), shapes[1].Fill);
+        Assert.Equal(new Pt(14, 20), shapes[1].Path.SubPaths[0].Start); // r - half the stroke
+    }
+
+    [Fact]
+    public void ReadStaticShapes_ExplicitFillNone_DoesNotInheritTheGroupsFill()
+    {
+        string svg = "<svg xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#ffffff\">"
+            + "<path d=\"M0 0 L10 0\" fill=\"none\" stroke=\"#112233\" stroke-width=\"2\"/></g></svg>";
+        var shapes = SvgReader.ReadStaticShapes(svg);
+
+        // A stroke ribbon in the stroke's color — not the open curve filled white.
+        Assert.All(shapes, s => Assert.Equal(RgbColor.Parse("#112233"), s.Fill));
+    }
+
+    [Fact]
     public void ReadStaticShapes_ImportsPolygonAsClosedLineLoop()
     {
         string svg = "<svg xmlns=\"http://www.w3.org/2000/svg\">" +

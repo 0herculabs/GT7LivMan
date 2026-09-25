@@ -27,19 +27,22 @@ public sealed class PlateEditorViewModel : ObservableObject
     {
         _outliner = new WpfGlyphOutliner(_fontResolver);
 
-        AvailableTemplates = TemplateCatalog.LoadAll(Path.Combine(AppContext.BaseDirectory, "templates"));
+        AvailableTemplates = new(TemplateCatalog.LoadAll(Path.Combine(AppContext.BaseDirectory, "templates")));
         if (AvailableTemplates.Count == 0)
         {
             throw new InvalidOperationException(
                 $"No se encontró ninguna plantilla en '{Path.Combine(AppContext.BaseDirectory, "templates")}'.");
         }
 
+        SortTemplates();
+
         // Assigning through the property (not the backing field) so it runs the same
         // load/recompute logic a later user selection would.
         SelectedTemplate = AvailableTemplates[0];
     }
 
-    public IReadOnlyList<TemplateCatalogEntry> AvailableTemplates { get; }
+    /// <summary>Alphabetical by the name shown in the current language — re-sorted on a language change, since e.g. "USA" sorts last in English but "EE. UU." first in Spanish.</summary>
+    public ObservableCollection<TemplateCatalogEntry> AvailableTemplates { get; }
 
     public TemplateCatalogEntry SelectedTemplate
     {
@@ -119,9 +122,25 @@ public sealed class PlateEditorViewModel : ObservableObject
         {
             template.RefreshLanguage();
         }
+        SortTemplates();
         foreach (FieldInputViewModel input in FieldInputs)
         {
             input.RefreshLanguage();
+        }
+    }
+
+    // Moved in place rather than replaced, so the selected template stays selected.
+    private void SortTemplates()
+    {
+        var comparer = StringComparer.Create(LocalizationService.Culture, ignoreCase: true);
+        var sorted = AvailableTemplates.OrderBy(t => t.LocalizedDisplayName, comparer).ToList();
+        for (int i = 0; i < sorted.Count; i++)
+        {
+            int current = AvailableTemplates.IndexOf(sorted[i]);
+            if (current != i)
+            {
+                AvailableTemplates.Move(current, i);
+            }
         }
     }
 
@@ -141,7 +160,7 @@ public sealed class PlateEditorViewModel : ObservableObject
             sb.Append(maskChar switch
             {
                 '9' => '1',
-                'A' or 'X' => field.AllowedLetters.Length > 0 ? field.AllowedLetters[0] : 'A',
+                'A' or 'X' or '*' => field.AllowedLetters.Length > 0 ? field.AllowedLetters[0] : 'A',
                 _ => maskChar,
             });
         }

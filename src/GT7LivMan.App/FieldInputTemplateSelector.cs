@@ -13,8 +13,12 @@ public sealed class FieldInputTemplateSelector : DataTemplateSelector
 
     public DataTemplate? RestrictedDropdownTemplate { get; set; }
 
+    /// <summary>A text box preceded by a format picker, for a field with more than one mask (<see cref="FieldInputViewModel.HasMaskOptions"/>).</summary>
+    public DataTemplate? FormatTemplate { get; set; }
+
     public override DataTemplate? SelectTemplate(object? item, DependencyObject container) => item switch
     {
+        FieldInputViewModel { HasMaskOptions: true } => FormatTemplate,
         FieldInputViewModel { HasDropdownOptions: true, RequireDropdownSelection: true } => RestrictedDropdownTemplate,
         FieldInputViewModel { HasDropdownOptions: true } => DropdownTemplate,
         _ => PlainTemplate,

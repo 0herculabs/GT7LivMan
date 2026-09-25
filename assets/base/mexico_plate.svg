@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="760" height="453" viewBox="0 0 760 453">
+  <defs>
+    <clipPath id="plateClip">
+      <rect x="8" y="28" width="744" height="372" rx="28" ry="28"/>
+    </clipPath>
+  </defs>
+
+  <rect x="8" y="28" width="744" height="372" rx="28" ry="28" fill="#f7f7f7" stroke="#d2d2d2" stroke-width="1.5"/>
+  <g clip-path="url(#plateClip)">
+    <rect x="8" y="40" width="257" height="20" fill="#ef4d43"/>
+    <rect x="494" y="40" width="258" height="20" fill="#ef4d43"/>
+    <g fill="#ffffff" opacity="0.55">
+      <polygon points="18,40 38,60 58,40"/><polygon points="58,40 78,60 98,40"/><polygon points="98,40 118,60 138,40"/>
+      <polygon points="138,40 158,60 178,40"/><polygon points="178,40 198,60 218,40"/><polygon points="218,40 238,60 258,40"/>
+      <polygon points="504,40 524,60 544,40"/><polygon points="544,40 564,60 584,40"/><polygon points="584,40 604,60 624,40"/>
+      <polygon points="624,40 644,60 664,40"/><polygon points="664,40 684,60 704,40"/><polygon points="704,40 724,60 744,40"/>
+    </g>
+  </g>
+
+
+  <g fill="#2e2430">
+    <rect x="287" y="38" width="2" height="18"/><rect x="290" y="38" width="1" height="18"/><rect x="293" y="38" width="1" height="18"/>
+    <rect x="296" y="38" width="2" height="18"/><rect x="299" y="38" width="1" height="18"/><rect x="302" y="38" width="3" height="18"/>
+    <rect x="306" y="38" width="1" height="18"/><rect x="309" y="38" width="1" height="18"/><rect x="312" y="38" width="2" height="18"/>
+    <rect x="315" y="38" width="1" height="18"/><rect x="318" y="38" width="4" height="18"/><rect x="323" y="38" width="1" height="18"/>
+    <rect x="326" y="38" width="1" height="18"/><rect x="329" y="38" width="2" height="18"/><rect x="332" y="38" width="1" height="18"/>
+    <rect x="335" y="38" width="2" height="18"/><rect x="338" y="38" width="1" height="18"/><rect x="341" y="38" width="1" height="18"/>
+    <rect x="344" y="38" width="3" height="18"/><rect x="348" y="38" width="1" height="18"/><rect x="351" y="38" width="1" height="18"/>
+    <rect x="354" y="38" width="2" height="18"/><rect x="357" y="38" width="2" height="18"/><rect x="360" y="38" width="1" height="18"/>
+    <rect x="363" y="38" width="1" height="18"/><rect x="366" y="38" width="3" height="18"/><rect x="370" y="38" width="1" height="18"/>
+    <rect x="373" y="38" width="2" height="18"/><rect x="376" y="38" width="1" height="18"/><rect x="379" y="38" width="1" height="18"/>
+    <rect x="382" y="38" width="2" height="18"/><rect x="385" y="38" width="1" height="18"/><rect x="388" y="38" width="3" height="18"/>
+    <rect x="392" y="38" width="1" height="18"/><rect x="395" y="38" width="1" height="18"/><rect x="398" y="38" width="2" height="18"/>
+    <rect x="401" y="38" width="1" height="18"/><rect x="404" y="38" width="1" height="18"/><rect x="407" y="38" width="4" height="18"/>
+    <rect x="412" y="38" width="1" height="18"/><rect x="415" y="38" width="1" height="18"/><rect x="418" y="38" width="2" height="18"/>
+    <rect x="421" y="38" width="1" height="18"/><rect x="424" y="38" width="3" height="18"/><rect x="428" y="38" width="1" height="18"/>
+    <rect x="431" y="38" width="1" height="18"/><rect x="434" y="38" width="2" height="18"/><rect x="437" y="38" width="1" height="18"/>
+    <rect x="440" y="38" width="2" height="18"/><rect x="443" y="38" width="1" height="18"/><rect x="446" y="38" width="1" height="18"/>
+  </g>
+
+  <text x="380" y="105" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="53" font-weight="700" fill="#ef4d43" stroke="#a73b32" stroke-width="2">Estado de México</text>
+  <g transform="translate(686.00,45.00) scale(0.47170)"><path d="M 76,37 64,37 64,40 68,40 70,42 70,72 71,71 71,45 70,43 72,40 75,40 76,39 Z M 53,37 50,39 47,46 47,61 48,62 49,68 51,70 51,71 53,72 56,72 60,67 61,59 60,59 58,67 55,70 53,70 51,68 49,64 49,60 48,59 48,49 49,48 49,45 51,41 54,39 57,40 59,42 59,45 60,46 61,46 61,44 58,38 56,37 Z M 35,37 32,41 32,50 35,54 39,56 42,59 42,66 40,69 36,69 33,66 32,64 32,61 31,62 31,65 32,66 33,70 35,72 40,72 43,67 43,58 40,53 35,51 33,49 33,42 36,39 37,39 41,42 41,45 42,46 43,46 43,44 42,43 41,39 39,37 Z M 0,34 0,35 2,36 3,38 4,38 10,44 10,45 12,46 12,47 16,52 17,55 19,57 22,64 22,67 23,68 23,73 24,74 24,82 23,83 23,88 20,94 19,99 23,95 24,95 24,94 26,92 30,90 32,90 35,88 41,87 42,86 51,86 52,85 57,85 58,86 66,86 67,87 69,87 72,89 76,90 78,92 79,92 85,98 86,100 86,97 83,91 83,86 82,85 82,68 83,67 83,64 90,50 99,40 99,39 104,35 105,35 105,34 96,34 95,33 90,33 89,32 86,32 83,30 81,30 75,27 64,18 64,17 60,13 59,10 55,5 53,0 52,0 51,4 49,6 49,8 46,11 46,13 44,15 43,15 38,21 37,21 30,27 16,33 5,34 4,35 1,35 Z M 8,38 11,36 19,35 22,33 24,33 32,29 35,26 40,23 40,22 47,15 50,8 52,6 53,6 55,8 57,13 61,17 61,18 73,29 81,33 87,34 88,35 91,35 92,36 95,36 96,37 95,41 91,45 91,46 87,51 82,61 82,64 81,65 81,68 80,69 80,86 81,87 81,89 79,90 75,87 73,87 69,85 65,85 64,84 43,84 42,85 38,85 37,86 35,86 34,87 32,87 29,89 25,90 24,88 25,87 26,74 25,73 25,68 24,67 23,60 21,58 21,56 19,54 16,48 8,39 Z" fill="#4a3b3b" fill-rule="evenodd"/></g>
+
+  <rect x="182" y="376" width="392" height="19" rx="4" fill="#ef4d43"/>
+  <text x="378" y="390" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" fill="#ffffff">TRANSPORTE PRIVADO AUTOMÓVIL</text>
+
+  <!-- Left footer text moved a bit right, icon removed -->
+  <text x="78" y="369" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="8" fill="#666666">GOBIERNO DEL</text>
+  <text x="78" y="380" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="8" fill="#666666">ESTADO DE MÉXICO</text>
+
+  <!-- Right footer block moved inside the plate -->
+  <text x="682" y="376" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="42" font-weight="700" fill="#bfbfbf">G</text>
+  <text x="682" y="396" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#777777">enGRANDE</text>
+</svg>

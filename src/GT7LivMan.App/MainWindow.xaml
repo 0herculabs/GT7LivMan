@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GT7LivMan.App"
         xmlns:conv="clr-namespace:GT7LivMan.App.Converters"
         mc:Ignorable="d"
-        Title="GT7LivMan" Height="650" Width="1000"
+        Title="GT7LivMan" Height="740" Width="1000"
         MinHeight="560" MinWidth="820"
         ResizeMode="NoResize"
         Icon="pack://application:,,,/icon.ico"
@@ -42,7 +42,21 @@
                           IsEditable="False" FontSize="20" Padding="6" />
             </StackPanel>
         </DataTemplate>
+        <!-- A field with more than one format (the Netherlands' XX-XX-XX / XX-XXX-X): pick the
+             format first, then type; the dashes are placed for the chosen one. -->
+        <DataTemplate x:Key="FormatFieldTemplate">
+            <StackPanel Margin="0,0,0,8">
+                <TextBlock Text="{Binding FormatLabel}" Foreground="#FFB0B0B0" Margin="0,0,0,4" />
+                <ComboBox ItemsSource="{Binding MaskOptions}"
+                          SelectedItem="{Binding SelectedMask}"
+                          FontSize="16" Padding="6" Margin="0,0,0,8" />
+                <TextBlock Text="{Binding Label}" Foreground="#FFB0B0B0" Margin="0,0,0,4" />
+                <TextBox Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}"
+                         FontSize="20" Padding="6" CharacterCasing="Upper" />
+            </StackPanel>
+        </DataTemplate>
         <local:FieldInputTemplateSelector x:Key="FieldInputTemplateSelector"
+                                           FormatTemplate="{StaticResource FormatFieldTemplate}"
                                            PlainTemplate="{StaticResource PlainFieldTemplate}"
                                            DropdownTemplate="{StaticResource DropdownFieldTemplate}"
                                            RestrictedDropdownTemplate="{StaticResource RestrictedDropdownFieldTemplate}" />
@@ -65,6 +79,31 @@
                 </Trigger>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="#FF37B85D" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Header links (Ko-fi, website): each sets its own Background; its own template so the
+             color actually shows, with a hand cursor and a slight dim on hover. -->
+        <Style x:Key="LinkButtonStyle" TargetType="Button">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Padding" Value="12,5" />
+            <Setter Property="Margin" Value="0,0,8,0" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="4" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" Value="0.85" />
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -113,6 +152,11 @@
             <TextBlock Text="GT7LivMan" Foreground="White" FontSize="22" FontWeight="Bold"
                        VerticalAlignment="Center" />
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <Button x:Name="WebsiteButton" Content="Website" Style="{StaticResource LinkButtonStyle}"
+                        Background="#FF2878B8" Click="WebsiteButton_Click" ToolTip="https://gt7livman.com" />
+                <Button x:Name="KofiButton" Content="Support on Ko-fi" Style="{StaticResource LinkButtonStyle}"
+                        Background="#FFF16061" Click="KofiButton_Click" ToolTip="https://ko-fi.com/herculabs"
+                        Margin="0,0,20,0" />
                 <TextBlock x:Name="LanguageLabel" Text="Language" Foreground="#FFD0D0D0"
                            FontSize="14" VerticalAlignment="Center" Margin="0,0,10,0" />
                 <ComboBox x:Name="LanguageSelector" Width="130" FontSize="14" Padding="6,4"

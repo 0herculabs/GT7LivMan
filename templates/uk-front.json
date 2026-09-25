@@ -2204,7 +2204,11 @@
       "RandomYearMin": null,
       "RandomizeAsLetterAndDigitBlocks": false,
       "RandomMonthDigitsStart": null,
-      "RandomTwoDigitYearDigits": null
+      "RandomTwoDigitYearDigits": null,
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": null,
+      "GlyphShapes": null
     }
   ]
 }

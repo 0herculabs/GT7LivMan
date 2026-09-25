@@ -26,6 +26,17 @@ public partial class MainWindow : Window
         ApplyLanguage();
     }
 
+    private const string WebsiteUrl = "https://gt7livman.com";
+    private const string KofiUrl = "https://ko-fi.com/herculabs";
+
+    private void WebsiteButton_Click(object sender, RoutedEventArgs e) => OpenInBrowser(WebsiteUrl);
+
+    private void KofiButton_Click(object sender, RoutedEventArgs e) => OpenInBrowser(KofiUrl);
+
+    // UseShellExecute hands the URL to Windows, which opens it in the default browser.
+    private static void OpenInBrowser(string url) =>
+        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(url) { UseShellExecute = true });
+
     private void RandomizeButton_Click(object sender, RoutedEventArgs e) => _viewModel.RandomizeAllFields();
 
     private void ExportButton_Click(object sender, RoutedEventArgs e)
@@ -106,6 +117,8 @@ public partial class MainWindow : Window
     {
         Title = LocalizationService.Text("WindowTitle");
         LanguageLabel.Text = LocalizationService.Text("Language");
+        WebsiteButton.Content = LocalizationService.Text("Website");
+        KofiButton.Content = LocalizationService.Text("SupportKofi");
         VinylTab.Header = LocalizationService.Text("VinylTab");
         PlateTab.Header = LocalizationService.Text("PlateTab");
         LoadImageButton.Content = LocalizationService.Text("LoadImage");

@@ -7,9 +7,9 @@ namespace GT7LivMan.Core.Model;
 /// </summary>
 public static class TextMetrics
 {
-    /// <summary>The pen advance for one character: a literal whitespace in the mask gets its own, narrower pitch.</summary>
+    /// <summary>The pen advance for one character: a literal separator in the mask (Spain's space, the Netherlands' dash) gets its own, narrower pitch.</summary>
     public static double Advance(char c, double tracking, double spaceTracking) =>
-        char.IsWhiteSpace(c) ? spaceTracking : tracking;
+        char.IsLetterOrDigit(c) ? tracking : spaceTracking;
 
     /// <summary>Total width of the character cells <paramref name="text"/> occupies.</summary>
     public static double AdvanceWidth(string text, double tracking, double spaceTracking)

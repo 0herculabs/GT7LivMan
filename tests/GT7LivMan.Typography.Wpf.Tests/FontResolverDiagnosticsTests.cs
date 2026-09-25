@@ -20,7 +20,7 @@ public class FontResolverDiagnosticsTests(ITestOutputHelper output)
     [Fact]
     public void Print_WhereEachTemplateFontResolvesFrom()
     {
-        foreach (string preferred in new[] { "MESPREG", "DIN1451", "CharlesWright-Bold", "LICENSE PLATE USA", "Roboto Condensed", "Overpass" })
+        foreach (string preferred in new[] { "MESPREG", "Alte DIN 1451 Mittelschrift", "CharlesWright-Bold", "LICENSE PLATE USA", "Roboto Condensed", "Overpass" })
         {
             FontResolution r = Resolver.Resolve(preferred, ["Roboto Condensed", "Overpass"]);
             output.WriteLine($"{preferred,-18} Source={r.Source,-17} IsFallback={r.IsFallback,-5} {r.Typeface.FontUri}");
@@ -38,7 +38,7 @@ public class FontResolverDiagnosticsTests(ITestOutputHelper output)
         var outliner = new WpfGlyphOutliner(Resolver);
         const double charHeight = 142;
 
-        foreach (string family in new[] { "MESPREG", "DIN1451", "CharlesWright-Bold", "LICENSE PLATE USA", "Roboto Condensed", "Overpass" })
+        foreach (string family in new[] { "MESPREG", "Alte DIN 1451 Mittelschrift", "CharlesWright-Bold", "LICENSE PLATE USA", "Roboto Condensed", "Overpass" })
         {
             double total = 0;
             int counted = 0;
@@ -73,7 +73,7 @@ public class FontResolverDiagnosticsTests(ITestOutputHelper output)
 
     [Theory]
     [InlineData("MESPREG", 237, 173)] // Spain, with the real plate font present
-    [InlineData("DIN1451", 142, 95)] // Portugal, currently falling back
+    [InlineData("Alte DIN 1451 Mittelschrift", 142, 95)] // Portugal
     public void Print_InkWidthPerCell(string preferredFamily, double charHeight, double tracking)
     {
         var outliner = new WpfGlyphOutliner(Resolver);

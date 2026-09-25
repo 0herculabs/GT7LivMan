@@ -14,7 +14,17 @@ public static class MaskFormatter
 {
     public static string AutoFormat(FieldDef field, string rawInput)
     {
-        string content = new(rawInput.Where(char.IsLetterOrDigit).ToArray());
+        if (field.DigitPadChar is char pad)
+        {
+            // Leading zeros are padding on such a plate, never digits: "0012" is just 12.
+            string digits = new string([.. rawInput.Where(char.IsAsciiDigit)]).TrimStart('0');
+            return digits.Length == 0 ? string.Empty : FormatPaddedNumber(field.Mask, pad, digits);
+        }
+
+        // A free '*' slot takes symbols and spaces too, so those can't be stripped out as stray
+        // separators the way they are for a letters-and-digits mask.
+        bool freeText = field.Mask.Contains('*');
+        string content = new(rawInput.Where(c => freeText ? !char.IsControl(c) : char.IsLetterOrDigit(c)).ToArray());
         content = content.ToUpperInvariant();
 
         var sb = new StringBuilder(field.Mask.Length);
@@ -27,7 +37,7 @@ public static class MaskFormatter
                 break;
             }
 
-            if (maskChar is '9' or 'A' or 'X')
+            if (IsSlot(maskChar))
             {
                 sb.Append(content[contentIndex]);
                 contentIndex++;
@@ -41,6 +51,59 @@ public static class MaskFormatter
         }
 
         return sb.ToString();
+    }
+
+    /// <summary>
+    /// Right-aligns <paramref name="digits"/> (no leading zero; extra digits beyond the mask's
+    /// '9' slots are dropped) into <paramref name="mask"/>'s digit slots, filling empty leading
+    /// slots with <paramref name="pad"/>. The mask's literals show only when every slot is a digit,
+    /// otherwise they're a blank: "・・ 12", "・1 23", "12-34" for "99-99".
+    /// </summary>
+    internal static string FormatPaddedNumber(string mask, char pad, string digits)
+    {
+        int slots = mask.Count(c => c == '9');
+        if (digits.Length > slots)
+        {
+            digits = digits[..slots];
+        }
+
+        string filled = new string(pad, slots - digits.Length) + digits;
+        bool full = digits.Length == slots;
+        var sb = new StringBuilder(mask.Length);
+        int next = 0;
+        foreach (char maskChar in mask)
+        {
+            sb.Append(maskChar == '9' ? filled[next++] : full ? maskChar : ' ');
+        }
+
+        return sb.ToString();
+    }
+
+    private static bool IsSlot(char maskChar) => maskChar is '9' or 'A' or 'X' or '*';
+
+    /// <summary>Each run of non-literal characters in <paramref name="mask"/> (e.g. each "XX" block).</summary>
+    private static List<(int Start, int Length)> Blocks(string mask)
+    {
+        var blocks = new List<(int Start, int Length)>();
+        int i = 0;
+        while (i < mask.Length)
+        {
+            if (!IsSlot(mask[i]))
+            {
+                i++;
+                continue;
+            }
+
+            int start = i;
+            while (i < mask.Length && IsSlot(mask[i]))
+            {
+                i++;
+            }
+
+            blocks.Add((start, i - start));
+        }
+
+        return blocks;
     }
 
     /// <summary>
@@ -63,6 +126,13 @@ public static class MaskFormatter
             return options[random.Next(options.Count)];
         }
 
+        if (field.DigitPadChar is char pad)
+        {
+            int slots = field.Mask.Count(c => c == '9');
+            int number = random.Next(1, (int)Math.Pow(10, slots));
+            return FormatPaddedNumber(field.Mask, pad, number.ToString(CultureInfo.InvariantCulture));
+        }
+
         if (field.RandomYearMin is int minYear)
         {
             int year = random.Next(minYear, DateTime.Now.Year + 1);
@@ -71,8 +141,8 @@ public static class MaskFormatter
             return FillDigitSlots(field.Mask, digits);
         }
 
-        string value = field.RandomizeAsLetterAndDigitBlocks
-            ? GenerateLetterAndDigitBlocks(field, random)
+        string value = field.RandomizeAsAlternatingBlocks ? GenerateAlternatingBlocks(field, random)
+            : field.RandomizeAsLetterAndDigitBlocks ? GenerateLetterAndDigitBlocks(field, random)
             : GenerateCharByChar(field, random);
 
         if (field.RandomMonthDigitsStart is int monthStart)
@@ -104,7 +174,8 @@ public static class MaskFormatter
             {
                 '9' => (char)('0' + random.Next(10)),
                 'A' => field.AllowedLetters[random.Next(field.AllowedLetters.Length)],
-                'X' => random.Next(2) == 0
+                // '*' could be anything, but a random plate reads as a plate with letters and digits.
+                'X' or '*' => random.Next(2) == 0
                     ? (char)('0' + random.Next(10))
                     : field.AllowedLetters[random.Next(field.AllowedLetters.Length)],
                 _ => maskChar,
@@ -117,35 +188,29 @@ public static class MaskFormatter
     /// <summary>Fills each run of non-literal mask characters (e.g. each "XX" block) entirely with letters or entirely with digits — never both — with exactly one run, chosen at random, getting letters.</summary>
     private static string GenerateLetterAndDigitBlocks(FieldDef field, Random random)
     {
-        var blocks = new List<(int Start, int Length)>();
-        int i = 0;
-        while (i < field.Mask.Length)
-        {
-            if (field.Mask[i] is not ('9' or 'A' or 'X'))
-            {
-                i++;
-                continue;
-            }
-
-            int start = i;
-            while (i < field.Mask.Length && field.Mask[i] is '9' or 'A' or 'X')
-            {
-                i++;
-            }
-
-            blocks.Add((start, i - start));
-        }
-
+        List<(int Start, int Length)> blocks = Blocks(field.Mask);
         int letterBlockIndex = blocks.Count > 0 ? random.Next(blocks.Count) : -1;
+        return FillBlocks(field, random, blocks, b => b == letterBlockIndex);
+    }
+
+    /// <summary>Fills each block entirely with letters or entirely with digits, neighbouring blocks always alternating, the first block's type chosen at random.</summary>
+    private static string GenerateAlternatingBlocks(FieldDef field, Random random)
+    {
+        int firstIsLetters = random.Next(2);
+        return FillBlocks(field, random, Blocks(field.Mask), b => b % 2 == firstIsLetters);
+    }
+
+    private static string FillBlocks(FieldDef field, Random random, List<(int Start, int Length)> blocks, Func<int, bool> isLetterBlock)
+    {
         char[] output = field.Mask.ToCharArray();
 
         for (int b = 0; b < blocks.Count; b++)
         {
             (int start, int length) = blocks[b];
-            bool isLetterBlock = b == letterBlockIndex;
+            bool letters = isLetterBlock(b);
             for (int c = 0; c < length; c++)
             {
-                output[start + c] = isLetterBlock
+                output[start + c] = letters
                     ? field.AllowedLetters[random.Next(field.AllowedLetters.Length)]
                     : (char)('0' + random.Next(10));
             }

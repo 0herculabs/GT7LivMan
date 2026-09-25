@@ -80,8 +80,7 @@ public static class SceneCompiler
             return;
         }
 
-        IReadOnlyList<PathData> glyphs = outliner.Outline(
-            value, field.PreferredFontFamily, field.FallbackFontFamilies, field.CharHeight, field.Tracking, field.SpaceTracking);
+        IReadOnlyList<PathData> glyphs = Outline(value, field, outliner);
         if (glyphs.Count == 0)
         {
             return;
@@ -103,5 +102,51 @@ public static class SceneCompiler
         }
 
         sink.Add(new SceneElement(new PathData(subPaths, FillRule.NonZero), textField.Fill));
+    }
+
+    /// <summary>
+    /// The font's outlines for <paramref name="value"/>, except that any character with one of the
+    /// field's <see cref="FieldDef.GlyphShapes"/> gets that shape instead, centered in its cell; the
+    /// runs of characters in between are still outlined by the font, at their usual positions.
+    /// </summary>
+    private static List<PathData> Outline(string value, FieldDef field, ITextOutliner outliner)
+    {
+        IReadOnlyList<PathData> OutlineRun(string text) => outliner.Outline(
+            text, field.PreferredFontFamily, field.FallbackFontFamilies, field.CharHeight, field.Tracking, field.SpaceTracking);
+
+        if (field.GlyphShapes is not { Count: > 0 } shapes)
+        {
+            return [.. OutlineRun(value)];
+        }
+
+        var result = new List<PathData>();
+        int runStart = 0;
+        double runPenX = 0;
+        double penX = 0;
+
+        void FlushRun(int end)
+        {
+            if (end > runStart)
+            {
+                result.AddRange(OutlineRun(value[runStart..end]).Select(g => PathDataTransform.Apply(g, Affine2.Translate(runPenX, 0))));
+            }
+        }
+
+        for (int i = 0; i < value.Length; i++)
+        {
+            double advance = TextMetrics.Advance(value[i], field.Tracking, field.SpaceTracking);
+            if (shapes.TryGetValue(value[i].ToString(), out PathData? shape))
+            {
+                FlushRun(i);
+                result.Add(PathDataTransform.Apply(shape, Affine2.Translate(penX + (advance / 2), 0)));
+                runStart = i + 1;
+                runPenX = penX + advance;
+            }
+
+            penX += advance;
+        }
+
+        FlushRun(value.Length);
+        return result;
     }
 }

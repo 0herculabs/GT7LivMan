@@ -58,7 +58,7 @@ Cada nivel apunta a un objetivo interno de 14 KB, no al límite duro de 15 KB de
 
 Las matrículas reales colocan cada carácter en una **celda de ancho fijo** — es lo que les da su aspecto regular, y de lo que dependen elementos del dibujo como los puntos separadores de Portugal. El pipeline reproduce eso:
 
-- El avance del lápiz es el paso fijo de la plantilla (`Tracking`), no el ancho natural del glifo. Un espacio literal de la máscara usa su propio paso (`SpaceTracking`).
+- El avance del lápiz es el paso fijo de la plantilla (`Tracking`), no el ancho natural del glifo. Un separador literal de la máscara (el espacio de España, el guion de Países Bajos) usa su propio paso, más estrecho (`SpaceTracking`); un separador visible se dibuja centrado en esa celda.
 - Cada glifo se **centra por su tinta** dentro de su celda. Sin esto, un carácter estrecho (un "1" mide la mitad que un "0") queda pegado al borde izquierdo y la fila entera parece desplazada, de forma visible con unas matrículas y no con otras.
 - Si un glifo **no cabe** en su celda, se condensa horizontalmente. Una fuente real de matrícula (DIN 1451, MESPREG) está diseñada para que todo el alfabeto quepa, así que esto nunca se activa; con una fuente de respaldo proporcional, una "W" o una "M" desbordaría y descuadraría la fila.
 - El bloque completo se ancla por su centro (`TextAnchor.Center`), así que no se mueve según qué caracteres se escriban.
@@ -82,6 +82,8 @@ GT7LivMan.sln
 ```
 
 Una plantilla se compone de arte estático (importado del SVG) más uno o varios **campos** editables. Un campo puede pintarse repartido en varios sitios: la fecha ITV portuguesa es un único campo de 4 dígitos que se reparte en dos líneas apiladas (`CharStart`/`CharCount`), mes sobre año. Un campo puede además declarar `DropdownOptions` (p. ej. los meses de California): la interfaz muestra un desplegable editable en vez de una caja de texto simple, pero sigue aceptando cualquier valor que cumpla la máscara, no solo los de la lista — salvo que además declare `RequireDropdownSelection` (el mes de California), en cuyo caso es una elección cerrada, porque una máscara "AAA" no puede por sí sola distinguir "un mes real" de "tres letras al azar".
+
+Un campo puede ofrecer varios formatos con `AlternativeMasks`: Países Bajos usa `XX-XX-XX` (p. ej. `NL-01-AB`, el formato por defecto) y `XX-XXX-X` (`29-KTV-7`). Como los dos tienen seis caracteres, lo tecleado no dice cuál se quiere, así que la interfaz muestra un selector de formato encima de la caja de texto. El formato elegido pasa a ser la única máscara del campo (`FieldDef.WithMask`): los guiones se colocan solos para ese formato, la validación y "Matrícula aleatoria" lo respetan, y al cambiar de formato lo ya escrito se recoloca. `RandomizeAsAlternatingBlocks` hace que los grupos aleatorios alternen letras y dígitos, como en las matrículas holandesas reales.
 
 `GT7LivMan.Core` no depende de WPF a propósito: el modelo de geometría, el parser/writer de SVG y la validación son 100% testeables sin necesidad de Windows/WPF, y dejan la puerta abierta a cambiar el motor de contornos de texto en el futuro si hiciera falta.
 
@@ -142,7 +144,9 @@ Resultado medido sobre logos reales descargados de internet (Sparco 3840×2400, 
 
 Las alternativas empaquetadas son **condensadas a propósito**: los anchos de celda de las plantillas están calibrados para la proporción estrecha de una fuente de matrícula, y una fuente ancha obligaría a condensar casi todos los caracteres.
 
-Para Portugal se probó una DIN 1451 "Breitschrift" (ancha, de señalización) y se descartó: da un resultado visiblemente distinto a una matrícula real. Hace falta la variante "Mittelschrift".
+Para Portugal se probó una DIN 1451 "Breitschrift" (ancha, de señalización) y se descartó: da un resultado visiblemente distinto a una matrícula real. Hace falta la variante "Mittelschrift": la plantilla pide la familia exacta "Alte DIN 1451 Mittelschrift" (`din1451alt.ttf`), porque la descarga trae también `din1451alt G.ttf` (*gepraegt*, en relieve), que va antes por orden alfabético y la búsqueda por nombre aproximado la cogería primero.
+
+En Carolina del Norte, la máscara `********` usa `*`: cualquier carácter (letra, dígito, símbolo o espacio), y los `*` del final pueden quedar vacíos, así que admite de 1 a 8 caracteres.
 
 ## Tests
 
@@ -170,8 +174,23 @@ Los tests también **regeneran `templates/*.json`** desde los SVG de `assets/bas
 ## Añadir un país
 
 1. Deja su SVG en `assets/base/`.
-2. Copia uno de los generadores de `tests/GT7LivMan.Core.Tests/Model/` (`SpainTemplateGeneratorTests`, `PortugalTemplateGeneratorTests`/`PortugalV1TemplateGeneratorTests`, `UkTemplateGeneratorTests`, o `CaliforniaTemplateGeneratorTests` si necesitas varios campos con parches de color como el mes/año) y ajusta máscara, campos y posiciones.
+2. Copia uno de los generadores de `tests/GT7LivMan.Core.Tests/Model/` (`SpainTemplateGeneratorTests`, `PortugalTemplateGeneratorTests`/`PortugalV1TemplateGeneratorTests`, `UkTemplateGeneratorTests`, `NetherlandsTemplateGeneratorTests` si la matrícula tiene varios formatos a elegir, `JapanTemplateGeneratorTests` si tiene varios campos en dos líneas y listas cerradas, o `CaliforniaTemplateGeneratorTests` si necesitas varios campos con parches de color como el mes/año) y ajusta máscara, campos y posiciones.
 3. `dotnet test` regenera la plantilla; el desplegable de la app la recoge sola, sin tocar la interfaz.
+
+Si el SVG trae cosas que `SvgReader` rechaza — texto sin convertir a contornos, `clip-path`, `opacity` — no hace falta retocarlo a mano: `DesignSvgFlattener` (en `tests/GT7LivMan.Typography.Wpf.Tests`, porque necesita WPF) contornea el texto con su fuente, recorta con el clip y mezcla la opacidad con el color de debajo. Es lo que usa `MexicoTemplateGeneratorTests`, que por eso vive en ese proyecto y no con los demás generadores. Un diseño con mucho texto puede no caber en los 15 KB junto con la matrícula: en México se quitaron el texto de tamaño 8 (ilegible en el coche) y el contorno del título, y el arte detallado se simplifica una vez al generar la plantilla (tolerancia 1) para que el presupuesto quede para los caracteres. Y si la fuente de la matrícula no tiene un guion utilizable (el `-` de LICENSE PLATE USA es una señal de "prohibido el paso"), los guiones van como arte fijo y el campo se pinta en trozos con `CharStart`/`CharCount` que se los saltan.
+
+Japón (`JapanTemplateGeneratorTests`) reúne varias piezas pensadas para casos así:
+
+- **`DigitPadChar`**: hace de un campo un número alineado a la derecha, con las posiciones vacías rellenas (`・・12`) y el guion solo cuando están los 4 dígitos.
+- **`GlyphShapes`**: dibuja formas propias en lugar del glifo de la fuente para ciertos caracteres (su guion y su punto, que ninguna fuente disponible dibuja con las proporciones de la placa).
+- **Retroceso por carácter en `WpfGlyphOutliner`**: si una fuente no tiene un carácter o lo tiene vacío, se toma de la siguiente fuente de la lista, en vez de desaparecer.
+
+Japón usa Yu Gothic Bold, que viene con Windows. La única réplica libre de su tipografía, FZナンバープレートゴシック, se probó y se descartó: contornos toscos (curvas facetadas), kanji y せ vacíos, y solo para uso personal.
+- **Grosor en `FontResolver`**: un nombre como `"Yu Gothic Bold"` elige ese grosor de la fuente del sistema; si no se indica, la normal, no la primera que liste la familia.
+
+El número de serie se pinta en cinco huecos fijos, cada uno con su propio `CharStart`/`CharCount`, para que un `・` o el hueco vacío del guion caigan donde los pone una matrícula real.
+
+Al exportar, si un SVG no cabe ni sin decimales, `ExportEscalation` simplifica solo los trazados con curvas (contornos de texto, arte vectorizado), empezando por tolerancia 0.5: los rectángulos, polígonos y esquinas redondeadas no se tocan, porque simplificarlos apenas ahorra y los estropea (una esquina redondeada se volvía un chaflán y una barra fina de 1 unidad desaparecía).
 
 La calibración de tamaño/posición se hace normalmente midiendo una foto real: altura de los caracteres y posición de la línea base como fracción de la altura interior de la placa (España y Portugal salieron ~70-78% y ~85-87%, notablemente consistentes entre países). Cuando el propio SVG trae elementos que fijan la rejilla — los puntos de Portugal, o su línea divisoria, que resultó medir exactamente el ancho del bloque de dígitos — esos mandan sobre cualquier proporción medida en foto. Y si el SVG ya está dibujado a escala real en mm (como el de UK, 520×111 ≈ el tamaño físico real), la especificación oficial del país (en UK, la de la DVLA: altura 79mm, ancho 50mm, espacio entre caracteres 11mm, entre grupos 33mm) da cifras exactas sin necesidad de medir ninguna foto.
 

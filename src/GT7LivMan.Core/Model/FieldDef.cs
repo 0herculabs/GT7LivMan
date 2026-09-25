@@ -1,3 +1,5 @@
+using GT7LivMan.Core.Geometry;
+
 namespace GT7LivMan.Core.Model;
 
 /// <summary>
@@ -7,9 +9,10 @@ namespace GT7LivMan.Core.Model;
 /// Spain's "9999 AAA"). <see cref="CharHeight"/>/<see cref="Tracking"/>/<see cref="SpaceTracking"/> are in the document's own units.
 /// </summary>
 /// <param name="Label">Human-readable label for the input UI — e.g. "Número de matrícula", "Fecha ITV". A document can have more than one field (Portugal's plate number and its inspection-date sticker are independent fields), so each needs its own label.</param>
-/// <param name="Tracking">Fixed pen advance after each non-whitespace character.</param>
+/// <param name="Tracking">Fixed pen advance after each letter or digit.</param>
 /// <param name="SpaceTracking">
-/// Fixed pen advance after a literal whitespace character in the mask. Measured against a real
+/// Fixed pen advance after a literal separator in the mask — a space, or a visible one like the
+/// Netherlands' dash (whose glyph is centered in this narrower cell). Measured against a real
 /// plate photo, this is smaller than <see cref="Tracking"/>, not larger — Tracking already carries
 /// a full character's width plus its own trailing gap, so the invisible space only needs to add
 /// the extra gap on top of that to reach the real plate's wider digit/letter group separation.
@@ -56,6 +59,29 @@ namespace GT7LivMan.Core.Model;
 /// "28") still works, this only caps what Random License Plate picks. Null means no digit run is
 /// treated as a two-digit year.
 /// </param>
+/// <param name="AlternativeMasks">
+/// Other formats the user can pick for this field besides <see cref="Mask"/> (the default) — the
+/// Netherlands' "XX-XX-XX" vs. "XX-XXX-X". Both have six characters, so which one is meant can't
+/// be inferred from what's typed: the UI shows a format picker, and the chosen one becomes the
+/// field's only mask (<see cref="WithMask"/>) for validation, auto-formatting and randomizing.
+/// </param>
+/// <param name="RandomizeAsAlternatingBlocks">
+/// Like <see cref="RandomizeAsLetterAndDigitBlocks"/>, each run of non-literal characters is
+/// filled entirely with letters or entirely with digits, but here neighbouring runs always
+/// alternate (starting type at random): Dutch plates never put two letter or two digit groups side
+/// by side ("99-XX-99", "XX-999-X", never "99-99-XX").
+/// </param>
+/// <param name="DigitPadChar">
+/// When set, the field is a right-aligned number, the way Japan shows its serial: the digits fill
+/// the mask's '9' slots from the right, empty leading slots show this character, and the mask's
+/// literals (the hyphen) appear only when every slot holds a digit — "・・12", "・123", "12-34".
+/// A leading zero isn't a digit here, it's padding, so a number never starts with 0.
+/// </param>
+/// <param name="GlyphShapes">
+/// Shapes drawn instead of the font's glyph for particular characters, for ones the plate font
+/// lacks or draws wrong (Japan's hyphen and centred dot). Keys are single characters; each path is
+/// in document units, relative to the character cell's horizontal center on the baseline.
+/// </param>
 public sealed record FieldDef(
     string Id,
     string Label,
@@ -71,7 +97,19 @@ public sealed record FieldDef(
     int? RandomYearMin = null,
     bool RandomizeAsLetterAndDigitBlocks = false,
     int? RandomMonthDigitsStart = null,
-    RandomTwoDigitYearSpec? RandomTwoDigitYearDigits = null);
+    RandomTwoDigitYearSpec? RandomTwoDigitYearDigits = null,
+    IReadOnlyList<string>? AlternativeMasks = null,
+    bool RandomizeAsAlternatingBlocks = false,
+    char? DigitPadChar = null,
+    IReadOnlyDictionary<string, PathData>? GlyphShapes = null)
+{
+    /// <summary><see cref="Mask"/> first, then any <see cref="AlternativeMasks"/>.</summary>
+    public IReadOnlyList<string> AllMasks() =>
+        AlternativeMasks is { Count: > 0 } alternatives ? [Mask, .. alternatives] : [Mask];
+
+    /// <summary>This field with <paramref name="mask"/> (one of <see cref="AllMasks"/>) as its only mask.</summary>
+    public FieldDef WithMask(string mask) => this with { Mask = mask, AlternativeMasks = null };
+}
 
 /// <summary>Where a two-digit year run sits in a <see cref="FieldDef.Mask"/> and the earliest year <see cref="MaskFormatter.GenerateRandom"/> may pick for it (a plain record, not a value tuple, so it round-trips through <see cref="PlateDocumentSerializer"/>).</summary>
 public sealed record RandomTwoDigitYearSpec(int Start, int MinTwoDigitYear);

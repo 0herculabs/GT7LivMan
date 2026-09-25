@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Text.RegularExpressions;
 
 namespace GT7LivMan.App;
@@ -17,6 +18,9 @@ public static class LocalizationService
 
     public static bool IsSpanish => CurrentLanguage == "es";
 
+    /// <summary>For language-correct alphabetical sorting.</summary>
+    public static CultureInfo Culture => CultureInfo.GetCultureInfo(IsSpanish ? "es-ES" : "en-US");
+
     public static void SetLanguage(string code) => CurrentLanguage = code == "es" ? "es" : "en";
 
     /// <summary>"GT7LivMan - v0.5": same in every language, version taken from the csproj's &lt;Version&gt;.</summary>
@@ -28,6 +32,10 @@ public static class LocalizationService
         ("WindowTitle", _) => WindowTitle,
         ("Language", false) => "Language",
         ("Language", true) => "Idioma",
+        ("Website", false) => "Website",
+        ("Website", true) => "Web",
+        ("SupportKofi", false) => "Support on Ko-fi",
+        ("SupportKofi", true) => "Apoyar en Ko-fi",
         ("VinylTab", false) => "SVG Generator",
         ("VinylTab", true) => "Generador SVG",
         ("PlateTab", false) => "License Plate Generator",
@@ -36,6 +44,8 @@ public static class LocalizationService
         ("LoadImage", true) => "Cargar imagen...",
         ("CountryTemplate", false) => "Country / template",
         ("CountryTemplate", true) => "País / plantilla",
+        ("PlateFormat", false) => "Format",
+        ("PlateFormat", true) => "Formato",
         ("RandomPlate", false) => "Random license plate",
         ("RandomPlate", true) => "Matrícula aleatoria",
         ("Colors", false) => "Colors: ",
@@ -67,6 +77,10 @@ public static class LocalizationService
         ("Año", false) => "Year",
         ("Fecha ITV", false) => "Inspection date",
         ("Fecha ITV (mes/año)", false) => "Inspection date (month/year)",
+        ("Oficina de registro", false) => "Registration office",
+        ("Número de clasificación", false) => "Classification number",
+        ("Número de serie", false) => "Serial number",
+        ("Departamento", false) => "Department",
         _ => source,
     };
 
@@ -77,6 +91,13 @@ public static class LocalizationService
         ("Portugal - License v2", true) => "Portugal - Matrícula v2",
         ("UK - Front", true) => "Reino Unido - Delantera",
         ("UK - Back", true) => "Reino Unido - Trasera",
+        ("Netherlands - Front", true) => "Países Bajos - Delantera",
+        ("Netherlands - Back", true) => "Países Bajos - Trasera",
+        ("Mexico", true) => "México",
+        ("Japan", true) => "Japón",
+        ("Brazil", true) => "Brasil",
+        ("France", true) => "Francia",
+        ("USA - North Carolina", true) => "EE. UU. - Carolina del Norte",
         ("USA - California", true) => "EE. UU. - California",
         ("USA - New York", true) => "EE. UU. - Nueva York",
         _ => source,

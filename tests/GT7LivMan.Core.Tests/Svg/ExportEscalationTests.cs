@@ -48,6 +48,44 @@ public class ExportEscalationTests
     }
 
     [Fact]
+    public void Write_LeavesStraightAndArcPaths_Untouched_WhenSimplifying()
+    {
+        // A curve-heavy path that forces the simplification tiers, next to a thin 1x18 bar and a
+        // rounded rect: simplification must reach only the curved one.
+        var segs = new List<Seg>();
+        for (int i = 0; i < 2000; i++)
+        {
+            double wiggle = i % 2 == 0 ? 0.3 : -0.3;
+            segs.Add(new Seg.Cubic(new Pt(i + 0.3, wiggle), new Pt(i + 0.7, wiggle), new Pt(i + 1, 0)));
+        }
+
+        segs.Add(new Seg.Close());
+        PathData bar = Shapes.RoundedRect(10, 10, 1, 18, 0);
+        PathData rounded = Shapes.RoundedRect(20, 10, 60, 30, 8);
+        var scene = new Scene(new SizeMm(2100, 100),
+        [
+            new SceneElement(PathData.Single(new SubPath(new Pt(0, 0), segs)), RgbColor.Parse("#000000")),
+            new SceneElement(bar, RgbColor.Parse("#ff0000")),
+            new SceneElement(rounded, RgbColor.Parse("#00ff00")),
+        ]);
+
+        string escalated = ExportEscalation.Write(scene);
+        var zeroDecimals = SvgWriterOptions.Default with { Decimals = 0 };
+
+        Assert.True(SizeBudget.IsWithinGt7Limit(escalated));
+        Assert.Contains(PathOnly(bar, zeroDecimals), escalated, StringComparison.Ordinal);
+        Assert.Contains(PathOnly(rounded, zeroDecimals), escalated, StringComparison.Ordinal);
+    }
+
+    /// <summary>The d attribute SvgWriter would write for <paramref name="path"/> on its own.</summary>
+    private static string PathOnly(PathData path, SvgWriterOptions options)
+    {
+        string svg = SvgWriter.Write(new Scene(new SizeMm(10, 10), [new SceneElement(path, RgbColor.Parse("#123456"))]), options);
+        int start = svg.IndexOf(" d=\"", StringComparison.Ordinal) + 4;
+        return svg[start..svg.IndexOf('"', start)];
+    }
+
+    [Fact]
     public void Write_NeverThrows_OnEvenOddPaths()
     {
         // Simplification flattens to Line/Close only, discarding the original curve types, but must

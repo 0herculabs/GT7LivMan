@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="520" height="124" viewBox="0 0 520 124">
+  <defs>
+    <clipPath id="plateClip"><rect x="2.5" y="2.5" width="515" height="119" rx="5" ry="5"/></clipPath>
+    <g id="euStar" fill="#ffd11a"><polygon points="0,-4.1 1.0,-1.45 3.9,-1.28 1.62,0.52 2.45,3.2 0,1.82 -2.45,3.2 -1.62,0.52 -3.9,-1.28 -1.0,-1.45"/></g>
+  </defs>
+
+  <!-- white plate base -->
+  <rect x="2.5" y="2.5" width="515" height="119" rx="5" ry="5" fill="#ffffff"/>
+
+  <!-- blue bands extend fully to the black border -->
+  <g clip-path="url(#plateClip)">
+    <rect x="2.5" y="2.5" width="63" height="119" fill="#0c43b8"/>
+    <rect x="454.5" y="2.5" width="63" height="119" fill="#0c43b8"/>
+  </g>
+
+  <!-- EU stars -->
+  <g transform="translate(34,34)">
+    <use href="#euStar" transform="translate(0,-18)"/>
+    <use href="#euStar" transform="translate(9,-15.5) rotate(30)"/>
+    <use href="#euStar" transform="translate(15.5,-9) rotate(60)"/>
+    <use href="#euStar" transform="translate(18,0) rotate(90)"/>
+    <use href="#euStar" transform="translate(15.5,9) rotate(120)"/>
+    <use href="#euStar" transform="translate(9,15.5) rotate(150)"/>
+    <use href="#euStar" transform="translate(0,18) rotate(180)"/>
+    <use href="#euStar" transform="translate(-9,15.5) rotate(210)"/>
+    <use href="#euStar" transform="translate(-15.5,9) rotate(240)"/>
+    <use href="#euStar" transform="translate(-18,0) rotate(270)"/>
+    <use href="#euStar" transform="translate(-15.5,-9) rotate(300)"/>
+    <use href="#euStar" transform="translate(-9,-15.5) rotate(330)"/>
+  </g>
+  <text x="34" y="101" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" fill="#ffffff">F</text>
+
+  <!-- black outline drawn last so bands meet it cleanly -->
+  <rect x="2.5" y="2.5" width="515" height="119" rx="5" ry="5" fill="none" stroke="#000000" stroke-width="5"/>
+</svg>

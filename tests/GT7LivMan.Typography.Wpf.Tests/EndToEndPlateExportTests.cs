@@ -1,4 +1,5 @@
 using System.IO;
+using GT7LivMan.Core.Geometry;
 using GT7LivMan.Core.Model;
 using GT7LivMan.Core.Svg;
 
@@ -238,12 +239,113 @@ public class EndToEndPlateExportTests
     }
 
     [Fact]
+    public void FontResolver_PicksTheRegularDinMittelschrift_NotItsEmbossedVariant()
+    {
+        // The download ships both "din1451alt.ttf" and "din1451alt G.ttf" (gepraegt, embossed);
+        // the latter sorts first, so only an exact family-name match keeps Portugal on the regular one.
+        var resolver = new FontResolver(Path.Combine(RepoRoot, "fonts"));
+        FontResolution resolution = resolver.Resolve("Alte DIN 1451 Mittelschrift", ["Roboto Condensed", "Overpass"]);
+
+        Assert.Equal(FontSource.UserFontsFolder, resolution.Source);
+        Assert.EndsWith("din1451alt.ttf", resolution.Typeface.FontUri.LocalPath, StringComparison.OrdinalIgnoreCase);
+    }
+
+    [Fact]
     public void FontResolver_FallsBackWhenThePreferredFamilyIsMissingEverywhere()
     {
         var resolver = new FontResolver(Path.Combine(RepoRoot, "fonts"));
         FontResolution resolution = resolver.Resolve("ThisFontDoesNotExist12345", ["Arial"]);
 
         Assert.True(resolution.IsFallback);
+    }
+
+    [Theory]
+    [InlineData("品川", "330", "さ", "12-34", "japan-sample.svg")]
+    [InlineData("横浜", "50C", "せ", "・・ ・1", "japan-dots-sample.svg")]
+    [InlineData("鈴鹿", "888", "ぬ", "88-88", "japan-heavy-sample.svg")]
+    public void CompileAndExport_RealJapanTemplate_WithRealFonts_ProducesConformantSvgWithinBudget(
+        string region, string classNumber, string hiragana, string serial, string outputFile)
+    {
+        string templateJson = File.ReadAllText(Path.Combine(RepoRoot, "templates", "japan.json"));
+        PlateDocument document = PlateDocumentSerializer.Deserialize(templateJson);
+
+        var outliner = new WpfGlyphOutliner(new FontResolver(Path.Combine(RepoRoot, "fonts"), Path.Combine(RepoRoot, "fonts-bundled")));
+        var fieldValues = new Dictionary<string, string>
+        {
+            ["region"] = region,
+            ["classNumber"] = classNumber,
+            ["hiragana"] = hiragana,
+            ["serialNumber"] = serial,
+        };
+
+        Core.Rendering.Scene scene = SceneCompiler.Compile(document, fieldValues, outliner);
+        string svg = ExportEscalation.Write(scene);
+
+        Assert.True(
+            SizeBudget.IsWithinTarget(svg),
+            $"Expected <= {SizeBudget.TargetBytes} bytes, got {SizeBudget.MeasureUtf8Bytes(svg)}.");
+        Assert.DoesNotContain("<text", svg, StringComparison.OrdinalIgnoreCase);
+        Assert.DoesNotContain("stroke", svg, StringComparison.OrdinalIgnoreCase);
+
+        string outDir = Path.Combine(RepoRoot, "out");
+        Directory.CreateDirectory(outDir);
+        File.WriteAllText(Path.Combine(outDir, outputFile), svg);
+    }
+
+    [Theory]
+    [InlineData("BCA9G35", "brazil-sample.svg")]
+    [InlineData("WMW8M88", "brazil-heavy-sample.svg")]
+    public void CompileAndExport_RealBrazilTemplate_WithRealFont_ProducesConformantSvgWithinBudget(string plate, string outputFile)
+    {
+        PlateDocument document = PlateDocumentSerializer.Deserialize(File.ReadAllText(Path.Combine(RepoRoot, "templates", "brazil.json")));
+        var outliner = new WpfGlyphOutliner(new FontResolver(Path.Combine(RepoRoot, "fonts"), Path.Combine(RepoRoot, "fonts-bundled")));
+
+        Core.Rendering.Scene scene = SceneCompiler.Compile(document, new Dictionary<string, string> { ["plateNumber"] = plate }, outliner);
+        string svg = ExportEscalation.Write(scene);
+
+        Assert.True(
+            SizeBudget.IsWithinTarget(svg),
+            $"Expected <= {SizeBudget.TargetBytes} bytes, got {SizeBudget.MeasureUtf8Bytes(svg)}.");
+        Assert.DoesNotContain("<text", svg, StringComparison.OrdinalIgnoreCase);
+        Assert.DoesNotContain("stroke", svg, StringComparison.OrdinalIgnoreCase);
+
+        string outDir = Path.Combine(RepoRoot, "out");
+        Directory.CreateDirectory(outDir);
+        File.WriteAllText(Path.Combine(outDir, outputFile), svg);
+    }
+
+    [Theory]
+    [InlineData("AB 603 SJ", "argentina-sample.svg")]
+    [InlineData("WM 888 WM", "argentina-heavy-sample.svg")]
+    public void CompileAndExport_RealArgentinaTemplate_WithRealFont_ProducesConformantSvgWithinBudget(string plate, string outputFile)
+    {
+        PlateDocument document = PlateDocumentSerializer.Deserialize(File.ReadAllText(Path.Combine(RepoRoot, "templates", "argentina.json")));
+        var outliner = new WpfGlyphOutliner(new FontResolver(Path.Combine(RepoRoot, "fonts"), Path.Combine(RepoRoot, "fonts-bundled")));
+
+        Core.Rendering.Scene scene = SceneCompiler.Compile(document, new Dictionary<string, string> { ["plateNumber"] = plate }, outliner);
+        string svg = ExportEscalation.Write(scene);
+
+        Assert.True(
+            SizeBudget.IsWithinTarget(svg),
+            $"Expected <= {SizeBudget.TargetBytes} bytes, got {SizeBudget.MeasureUtf8Bytes(svg)}.");
+        Assert.DoesNotContain("<text", svg, StringComparison.OrdinalIgnoreCase);
+        Assert.DoesNotContain("stroke", svg, StringComparison.OrdinalIgnoreCase);
+
+        string outDir = Path.Combine(RepoRoot, "out");
+        Directory.CreateDirectory(outDir);
+        File.WriteAllText(Path.Combine(outDir, outputFile), svg);
+    }
+
+    [Fact]
+    public void WpfGlyphOutliner_TakesACharacterTheFirstFontLacks_FromTheNextFont()
+    {
+        // Roboto Condensed has no hiragana: without per-character fallback the せ would simply
+        // vanish while the digits around it still rendered.
+        var outliner = new WpfGlyphOutliner(new FontResolver(Path.Combine(RepoRoot, "fonts"), Path.Combine(RepoRoot, "fonts-bundled")));
+        var glyphs = outliner.Outline("1せ2", "Roboto Condensed", ["Yu Gothic Bold"], charHeight: 55, tracking: 45, spaceTracking: 45);
+
+        Assert.Equal(3, glyphs.Count);
+        Assert.All(glyphs, g => Assert.NotEmpty(g.SubPaths));
     }
 
     [Fact]

@@ -1,10 +1,10 @@
 {
   "SchemaVersion": "1",
-  "CountryCode": "GB",
-  "DisplayName": "UK - Back",
+  "CountryCode": "NL",
+  "DisplayName": "Netherlands - Front",
   "Size": {
     "Width": 520,
-    "Height": 111
+    "Height": 110
   },
   "Elements": [
     {
@@ -14,83 +14,83 @@
           {
             "Start": {
               "X": 16,
-              "Y": 0
+              "Y": 7
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
                   "X": 504,
-                  "Y": 0
+                  "Y": 7
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 16,
-                "Ry": 16,
+                "Rx": 9,
+                "Ry": 9,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
-                  "X": 520,
+                  "X": 513,
                   "Y": 16
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 520,
-                  "Y": 95
+                  "X": 513,
+                  "Y": 94
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 16,
-                "Ry": 16,
+                "Rx": 9,
+                "Ry": 9,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
                   "X": 504,
-                  "Y": 111
+                  "Y": 103
                 }
               },
               {
                 "$type": "line",
                 "To": {
                   "X": 16,
-                  "Y": 111
+                  "Y": 103
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 16,
-                "Ry": 16,
+                "Rx": 9,
+                "Ry": 9,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
-                  "X": 0,
-                  "Y": 95
+                  "X": 7,
+                  "Y": 94
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 0,
+                  "X": 7,
                   "Y": 16
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 16,
-                "Ry": 16,
+                "Rx": 9,
+                "Ry": 9,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
                   "X": 16,
-                  "Y": 0
+                  "Y": 7
                 }
               },
               {
@@ -123,83 +123,83 @@
           {
             "Start": {
               "X": 16,
-              "Y": 4
+              "Y": 9
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
                   "X": 504,
-                  "Y": 4
+                  "Y": 9
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 12,
-                "Ry": 12,
+                "Rx": 7,
+                "Ry": 7,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
-                  "X": 516,
+                  "X": 511,
                   "Y": 16
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 516,
-                  "Y": 95
+                  "X": 511,
+                  "Y": 94
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 12,
-                "Ry": 12,
+                "Rx": 7,
+                "Ry": 7,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
                   "X": 504,
-                  "Y": 107
+                  "Y": 101
                 }
               },
               {
                 "$type": "line",
                 "To": {
                   "X": 16,
-                  "Y": 107
+                  "Y": 101
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 12,
-                "Ry": 12,
+                "Rx": 7,
+                "Ry": 7,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
-                  "X": 4,
-                  "Y": 95
+                  "X": 9,
+                  "Y": 94
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 4,
+                  "X": 9,
                   "Y": 16
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 12,
-                "Ry": 12,
+                "Rx": 7,
+                "Ry": 7,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
                   "X": 16,
-                  "Y": 4
+                  "Y": 9
                 }
               },
               {
@@ -212,9 +212,9 @@
         "Rule": "NonZero"
       },
       "Fill": {
-        "R": 245,
-        "G": 196,
-        "B": 0
+        "R": 248,
+        "G": 248,
+        "B": 248
       },
       "Transform": {
         "A": 1,
@@ -232,83 +232,168 @@
           {
             "Start": {
               "X": 17,
-              "Y": 6
+              "Y": 12
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 60,
+                  "Y": 12
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 60,
+                  "Y": 98
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 17,
+                  "Y": 98
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 5,
+                "Ry": 5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 12,
+                  "Y": 93
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 12,
+                  "Y": 17
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 5,
+                "Ry": 5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 17,
+                  "Y": 12
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 11,
+        "G": 80,
+        "B": 200
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 17,
+              "Y": 10.5
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
                   "X": 503,
-                  "Y": 6
+                  "Y": 10.5
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 11,
-                "Ry": 11,
+                "Rx": 6.5,
+                "Ry": 6.5,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
-                  "X": 514,
+                  "X": 509.5,
                   "Y": 17
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 514,
-                  "Y": 94
+                  "X": 509.5,
+                  "Y": 93
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 11,
-                "Ry": 11,
+                "Rx": 6.5,
+                "Ry": 6.5,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
                   "X": 503,
-                  "Y": 105
+                  "Y": 99.5
                 }
               },
               {
                 "$type": "line",
                 "To": {
                   "X": 17,
-                  "Y": 105
+                  "Y": 99.5
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 11,
-                "Ry": 11,
+                "Rx": 6.5,
+                "Ry": 6.5,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
-                  "X": 6,
-                  "Y": 94
+                  "X": 10.5,
+                  "Y": 93
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 6,
+                  "X": 10.5,
                   "Y": 17
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 11,
-                "Ry": 11,
+                "Rx": 6.5,
+                "Ry": 6.5,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": true,
                 "To": {
                   "X": 17,
-                  "Y": 6
+                  "Y": 10.5
                 }
               },
               {
@@ -320,83 +405,83 @@
           {
             "Start": {
               "X": 17,
-              "Y": 8
+              "Y": 11.5
             },
             "Segments": [
               {
                 "$type": "arc",
-                "Rx": 9,
-                "Ry": 9,
+                "Rx": 5.5,
+                "Ry": 5.5,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": false,
                 "To": {
-                  "X": 8,
+                  "X": 11.5,
                   "Y": 17
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 8,
-                  "Y": 94
+                  "X": 11.5,
+                  "Y": 93
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 9,
-                "Ry": 9,
+                "Rx": 5.5,
+                "Ry": 5.5,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": false,
                 "To": {
                   "X": 17,
-                  "Y": 103
+                  "Y": 98.5
                 }
               },
               {
                 "$type": "line",
                 "To": {
                   "X": 503,
-                  "Y": 103
+                  "Y": 98.5
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 9,
-                "Ry": 9,
+                "Rx": 5.5,
+                "Ry": 5.5,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": false,
                 "To": {
-                  "X": 512,
-                  "Y": 94
+                  "X": 508.5,
+                  "Y": 93
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 512,
+                  "X": 508.5,
                   "Y": 17
                 }
               },
               {
                 "$type": "arc",
-                "Rx": 9,
-                "Ry": 9,
+                "Rx": 5.5,
+                "Ry": 5.5,
                 "XAxisRotationDeg": 0,
                 "LargeArc": false,
                 "SweepClockwise": false,
                 "To": {
                   "X": 503,
-                  "Y": 8
+                  "Y": 11.5
                 }
               },
               {
                 "$type": "line",
                 "To": {
                   "X": 17,
-                  "Y": 8
+                  "Y": 11.5
                 }
               },
               {
@@ -428,252 +513,71 @@
         "SubPaths": [
           {
             "Start": {
-              "X": 16,
-              "Y": 6
-            },
-            "Segments": [
-              {
-                "$type": "line",
-                "To": {
-                  "X": 64,
-                  "Y": 6
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 64,
-                  "Y": 105
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 16,
-                  "Y": 105
-                }
-              },
-              {
-                "$type": "arc",
-                "Rx": 10,
-                "Ry": 10,
-                "XAxisRotationDeg": 0,
-                "LargeArc": false,
-                "SweepClockwise": true,
-                "To": {
-                  "X": 6,
-                  "Y": 95
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 6,
-                  "Y": 16
-                }
-              },
-              {
-                "$type": "arc",
-                "Rx": 10,
-                "Ry": 10,
-                "XAxisRotationDeg": 0,
-                "LargeArc": false,
-                "SweepClockwise": true,
-                "To": {
-                  "X": 16,
-                  "Y": 6
-                }
-              },
-              {
-                "$type": "close"
-              }
-            ],
-            "IsClosed": true
-          }
-        ],
-        "Rule": "NonZero"
-      },
-      "Fill": {
-        "R": 17,
-        "G": 77,
-        "B": 184
-      },
-      "Transform": {
-        "A": 1,
-        "B": 0,
-        "C": 0,
-        "D": 1,
-        "E": 0,
-        "F": 0
-      }
-    },
-    {
-      "$type": "shape",
-      "Path": {
-        "SubPaths": [
-          {
-            "Start": {
               "X": 34,
-              "Y": 16.2
+              "Y": 17.3
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
-                  "X": 34.71,
-                  "Y": 18.03
+                  "X": 34.68,
+                  "Y": 19.07
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 36.66,
-                  "Y": 18.13
+                  "X": 36.57,
+                  "Y": 19.17
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 35.14,
-                  "Y": 19.37
+                  "X": 35.09,
+                  "Y": 20.36
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 35.65,
-                  "Y": 21.27
+                  "X": 35.59,
+                  "Y": 22.18
                 }
               },
               {
                 "$type": "line",
                 "To": {
                   "X": 34,
-                  "Y": 20.2
+                  "Y": 21.15
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 32.35,
-                  "Y": 21.27
+                  "X": 32.41,
+                  "Y": 22.18
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 32.86,
-                  "Y": 19.37
+                  "X": 32.91,
+                  "Y": 20.36
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 31.34,
-                  "Y": 18.13
+                  "X": 31.43,
+                  "Y": 19.17
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 33.29,
-                  "Y": 18.03
-                }
-              },
-              {
-                "$type": "close"
-              }
-            ],
-            "IsClosed": true
-          }
-        ],
-        "Rule": "NonZero"
-      },
-      "Fill": {
-        "R": 255,
-        "G": 210,
-        "B": 0
-      },
-      "Transform": {
-        "A": 1,
-        "B": 0,
-        "C": 0,
-        "D": 1,
-        "E": 0,
-        "F": 0
-      }
-    },
-    {
-      "$type": "shape",
-      "Path": {
-        "SubPaths": [
-          {
-            "Start": {
-              "X": 42,
-              "Y": 18.34
-            },
-            "Segments": [
-              {
-                "$type": "line",
-                "To": {
-                  "X": 42.71,
-                  "Y": 20.17
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 44.66,
-                  "Y": 20.28
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 43.14,
-                  "Y": 21.51
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 43.65,
-                  "Y": 23.41
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 42,
-                  "Y": 22.34
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 40.35,
-                  "Y": 23.41
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 40.86,
-                  "Y": 21.51
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 39.34,
-                  "Y": 20.28
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 41.29,
-                  "Y": 20.17
+                  "X": 33.32,
+                  "Y": 19.07
                 }
               },
               {
@@ -705,71 +609,263 @@
         "SubPaths": [
           {
             "Start": {
-              "X": 47.86,
-              "Y": 24.2
+              "X": 41.5,
+              "Y": 19.31
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
-                  "X": 48.56,
-                  "Y": 26.03
+                  "X": 42.18,
+                  "Y": 21.08
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 50.52,
-                  "Y": 26.13
+                  "X": 44.07,
+                  "Y": 21.18
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 42.59,
+                  "Y": 22.36
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 43.09,
+                  "Y": 24.19
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 41.5,
+                  "Y": 23.16
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 39.91,
+                  "Y": 24.19
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 40.41,
+                  "Y": 22.36
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 38.93,
+                  "Y": 21.18
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 40.82,
+                  "Y": 21.08
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 46.99,
+              "Y": 24.8
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 47.67,
+                  "Y": 26.57
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 49.56,
+                  "Y": 26.67
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 48.08,
+                  "Y": 27.86
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 48.58,
+                  "Y": 29.68
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 46.99,
+                  "Y": 28.65
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 45.4,
+                  "Y": 29.68
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 45.9,
+                  "Y": 27.86
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 44.42,
+                  "Y": 26.67
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 46.31,
+                  "Y": 26.57
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 49,
+              "Y": 32.3
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 49.68,
+                  "Y": 34.07
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 51.57,
+                  "Y": 34.17
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 50.09,
+                  "Y": 35.36
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 50.59,
+                  "Y": 37.18
                 }
               },
               {
                 "$type": "line",
                 "To": {
                   "X": 49,
-                  "Y": 27.37
+                  "Y": 36.15
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 49.5,
-                  "Y": 29.27
+                  "X": 47.41,
+                  "Y": 37.18
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 47.86,
-                  "Y": 28.2
+                  "X": 47.91,
+                  "Y": 35.36
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 46.21,
-                  "Y": 29.27
+                  "X": 46.43,
+                  "Y": 34.17
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 46.72,
-                  "Y": 27.37
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 45.19,
-                  "Y": 26.13
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 47.15,
-                  "Y": 26.03
+                  "X": 48.32,
+                  "Y": 34.07
                 }
               },
               {
@@ -801,71 +897,71 @@
         "SubPaths": [
           {
             "Start": {
-              "X": 50,
-              "Y": 32.2
+              "X": 46.99,
+              "Y": 39.8
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
-                  "X": 50.71,
-                  "Y": 34.03
+                  "X": 47.67,
+                  "Y": 41.57
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 52.66,
-                  "Y": 34.13
+                  "X": 49.56,
+                  "Y": 41.67
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 51.14,
-                  "Y": 35.37
+                  "X": 48.08,
+                  "Y": 42.86
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 51.65,
-                  "Y": 37.27
+                  "X": 48.58,
+                  "Y": 44.68
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 50,
-                  "Y": 36.2
+                  "X": 46.99,
+                  "Y": 43.65
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 48.35,
-                  "Y": 37.27
+                  "X": 45.4,
+                  "Y": 44.68
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 48.86,
-                  "Y": 35.37
+                  "X": 45.9,
+                  "Y": 42.86
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 47.34,
-                  "Y": 34.13
+                  "X": 44.42,
+                  "Y": 41.67
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 49.29,
-                  "Y": 34.03
+                  "X": 46.31,
+                  "Y": 41.57
                 }
               },
               {
@@ -897,167 +993,71 @@
         "SubPaths": [
           {
             "Start": {
-              "X": 47.86,
-              "Y": 40.2
+              "X": 41.5,
+              "Y": 45.29
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
-                  "X": 48.56,
-                  "Y": 42.03
+                  "X": 42.18,
+                  "Y": 47.06
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 50.52,
-                  "Y": 42.13
+                  "X": 44.07,
+                  "Y": 47.16
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 49,
-                  "Y": 43.37
+                  "X": 42.59,
+                  "Y": 48.35
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 49.5,
-                  "Y": 45.27
+                  "X": 43.09,
+                  "Y": 50.17
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 47.86,
-                  "Y": 44.2
+                  "X": 41.5,
+                  "Y": 49.14
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 46.21,
-                  "Y": 45.27
+                  "X": 39.91,
+                  "Y": 50.17
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 46.72,
-                  "Y": 43.37
+                  "X": 40.41,
+                  "Y": 48.35
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 45.19,
-                  "Y": 42.13
+                  "X": 38.93,
+                  "Y": 47.16
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 47.15,
-                  "Y": 42.03
-                }
-              },
-              {
-                "$type": "close"
-              }
-            ],
-            "IsClosed": true
-          }
-        ],
-        "Rule": "NonZero"
-      },
-      "Fill": {
-        "R": 255,
-        "G": 210,
-        "B": 0
-      },
-      "Transform": {
-        "A": 1,
-        "B": 0,
-        "C": 0,
-        "D": 1,
-        "E": 0,
-        "F": 0
-      }
-    },
-    {
-      "$type": "shape",
-      "Path": {
-        "SubPaths": [
-          {
-            "Start": {
-              "X": 42,
-              "Y": 46.06
-            },
-            "Segments": [
-              {
-                "$type": "line",
-                "To": {
-                  "X": 42.71,
-                  "Y": 47.89
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 44.66,
-                  "Y": 47.99
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 43.14,
-                  "Y": 49.23
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 43.65,
-                  "Y": 51.12
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 42,
-                  "Y": 50.06
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 40.35,
-                  "Y": 51.12
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 40.86,
-                  "Y": 49.23
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 39.34,
-                  "Y": 47.99
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 41.29,
-                  "Y": 47.89
+                  "X": 40.82,
+                  "Y": 47.06
                 }
               },
               {
@@ -1090,166 +1090,70 @@
           {
             "Start": {
               "X": 34,
-              "Y": 48.2
+              "Y": 47.3
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
-                  "X": 34.71,
-                  "Y": 50.03
+                  "X": 34.68,
+                  "Y": 49.07
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 36.66,
-                  "Y": 50.13
+                  "X": 36.57,
+                  "Y": 49.17
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 35.14,
-                  "Y": 51.37
+                  "X": 35.09,
+                  "Y": 50.36
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 35.65,
-                  "Y": 53.27
+                  "X": 35.59,
+                  "Y": 52.18
                 }
               },
               {
                 "$type": "line",
                 "To": {
                   "X": 34,
-                  "Y": 52.2
+                  "Y": 51.15
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 32.35,
-                  "Y": 53.27
+                  "X": 32.41,
+                  "Y": 52.18
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 32.86,
-                  "Y": 51.37
+                  "X": 32.91,
+                  "Y": 50.36
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 31.34,
-                  "Y": 50.13
+                  "X": 31.43,
+                  "Y": 49.17
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 33.29,
-                  "Y": 50.03
-                }
-              },
-              {
-                "$type": "close"
-              }
-            ],
-            "IsClosed": true
-          }
-        ],
-        "Rule": "NonZero"
-      },
-      "Fill": {
-        "R": 255,
-        "G": 210,
-        "B": 0
-      },
-      "Transform": {
-        "A": 1,
-        "B": 0,
-        "C": 0,
-        "D": 1,
-        "E": 0,
-        "F": 0
-      }
-    },
-    {
-      "$type": "shape",
-      "Path": {
-        "SubPaths": [
-          {
-            "Start": {
-              "X": 26,
-              "Y": 46.06
-            },
-            "Segments": [
-              {
-                "$type": "line",
-                "To": {
-                  "X": 26.71,
-                  "Y": 47.89
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 28.66,
-                  "Y": 47.99
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 27.14,
-                  "Y": 49.23
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 27.65,
-                  "Y": 51.12
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 26,
-                  "Y": 50.06
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 24.35,
-                  "Y": 51.12
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 24.86,
-                  "Y": 49.23
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 23.34,
-                  "Y": 47.99
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 25.29,
-                  "Y": 47.89
+                  "X": 33.32,
+                  "Y": 49.07
                 }
               },
               {
@@ -1281,71 +1185,263 @@
         "SubPaths": [
           {
             "Start": {
-              "X": 20.14,
-              "Y": 40.2
+              "X": 26.5,
+              "Y": 45.29
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
-                  "X": 20.85,
-                  "Y": 42.03
+                  "X": 27.18,
+                  "Y": 47.06
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 22.81,
-                  "Y": 42.13
+                  "X": 29.07,
+                  "Y": 47.16
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 21.28,
-                  "Y": 43.37
+                  "X": 27.59,
+                  "Y": 48.35
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 21.79,
-                  "Y": 45.27
+                  "X": 28.09,
+                  "Y": 50.17
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 20.14,
-                  "Y": 44.2
+                  "X": 26.5,
+                  "Y": 49.14
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 18.5,
-                  "Y": 45.27
+                  "X": 24.91,
+                  "Y": 50.17
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 25.41,
+                  "Y": 48.35
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 23.93,
+                  "Y": 47.16
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 25.82,
+                  "Y": 47.06
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 21.01,
+              "Y": 39.8
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 21.69,
+                  "Y": 41.57
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 23.58,
+                  "Y": 41.67
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 22.1,
+                  "Y": 42.86
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 22.6,
+                  "Y": 44.68
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 21.01,
+                  "Y": 43.65
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 19.42,
+                  "Y": 44.68
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 19.92,
+                  "Y": 42.86
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 18.44,
+                  "Y": 41.67
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 20.33,
+                  "Y": 41.57
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 255,
+        "G": 210,
+        "B": 0
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 19,
+              "Y": 32.3
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 19.68,
+                  "Y": 34.07
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 21.57,
+                  "Y": 34.17
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 20.09,
+                  "Y": 35.36
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 20.59,
+                  "Y": 37.18
                 }
               },
               {
                 "$type": "line",
                 "To": {
                   "X": 19,
-                  "Y": 43.37
+                  "Y": 36.15
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 17.48,
-                  "Y": 42.13
+                  "X": 17.41,
+                  "Y": 37.18
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 19.44,
-                  "Y": 42.03
+                  "X": 17.91,
+                  "Y": 35.36
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 16.43,
+                  "Y": 34.17
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 18.32,
+                  "Y": 34.07
                 }
               },
               {
@@ -1377,71 +1473,71 @@
         "SubPaths": [
           {
             "Start": {
-              "X": 18,
-              "Y": 32.2
+              "X": 21.01,
+              "Y": 24.8
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
-                  "X": 18.71,
-                  "Y": 34.03
+                  "X": 21.69,
+                  "Y": 26.57
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 20.66,
-                  "Y": 34.13
+                  "X": 23.58,
+                  "Y": 26.67
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 19.14,
-                  "Y": 35.37
+                  "X": 22.1,
+                  "Y": 27.86
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 19.65,
-                  "Y": 37.27
+                  "X": 22.6,
+                  "Y": 29.68
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 18,
-                  "Y": 36.2
+                  "X": 21.01,
+                  "Y": 28.65
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 16.35,
-                  "Y": 37.27
+                  "X": 19.42,
+                  "Y": 29.68
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 16.86,
-                  "Y": 35.37
+                  "X": 19.92,
+                  "Y": 27.86
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 15.34,
-                  "Y": 34.13
+                  "X": 18.44,
+                  "Y": 26.67
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 17.29,
-                  "Y": 34.03
+                  "X": 20.33,
+                  "Y": 26.57
                 }
               },
               {
@@ -1473,71 +1569,71 @@
         "SubPaths": [
           {
             "Start": {
-              "X": 20.14,
-              "Y": 24.2
+              "X": 26.5,
+              "Y": 19.31
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
-                  "X": 20.85,
-                  "Y": 26.03
+                  "X": 27.18,
+                  "Y": 21.08
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 22.81,
-                  "Y": 26.13
+                  "X": 29.07,
+                  "Y": 21.18
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 21.28,
-                  "Y": 27.37
+                  "X": 27.59,
+                  "Y": 22.36
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 21.79,
-                  "Y": 29.27
+                  "X": 28.09,
+                  "Y": 24.19
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 20.14,
-                  "Y": 28.2
+                  "X": 26.5,
+                  "Y": 23.16
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 18.5,
-                  "Y": 29.27
+                  "X": 24.91,
+                  "Y": 24.19
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 19,
-                  "Y": 27.37
+                  "X": 25.41,
+                  "Y": 22.36
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 17.48,
-                  "Y": 26.13
+                  "X": 23.93,
+                  "Y": 21.18
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 19.44,
-                  "Y": 26.03
+                  "X": 25.82,
+                  "Y": 21.08
                 }
               },
               {
@@ -1569,315 +1665,71 @@
         "SubPaths": [
           {
             "Start": {
-              "X": 26,
-              "Y": 18.34
+              "X": 20.897998046875,
+              "Y": 73.69091796875
             },
             "Segments": [
               {
                 "$type": "line",
                 "To": {
-                  "X": 26.71,
-                  "Y": 20.17
+                  "X": 24.866259765625,
+                  "Y": 73.69091796875
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 28.66,
-                  "Y": 20.28
+                  "X": 29.880419921875,
+                  "Y": 84.19091796875
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 27.14,
-                  "Y": 21.51
+                  "X": 29.880419921875,
+                  "Y": 73.69091796875
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 27.65,
-                  "Y": 23.41
+                  "X": 33.243701171875,
+                  "Y": 73.69091796875
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 26,
-                  "Y": 22.34
+                  "X": 33.243701171875,
+                  "Y": 89
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 24.35,
-                  "Y": 23.41
+                  "X": 29.275439453125,
+                  "Y": 89
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 24.86,
-                  "Y": 21.51
+                  "X": 24.271533203125,
+                  "Y": 78.5
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 23.34,
-                  "Y": 20.28
+                  "X": 24.271533203125,
+                  "Y": 89
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 25.29,
-                  "Y": 20.17
-                }
-              },
-              {
-                "$type": "close"
-              }
-            ],
-            "IsClosed": true
-          }
-        ],
-        "Rule": "NonZero"
-      },
-      "Fill": {
-        "R": 255,
-        "G": 210,
-        "B": 0
-      },
-      "Transform": {
-        "A": 1,
-        "B": 0,
-        "C": 0,
-        "D": 1,
-        "E": 0,
-        "F": 0
-      }
-    },
-    {
-      "$type": "shape",
-      "Path": {
-        "SubPaths": [
-          {
-            "Start": {
-              "X": 32.967578125,
-              "Y": 83.89921875
-            },
-            "Segments": [
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 31.444140625,
-                  "Y": 84.71953125
-                },
-                "To": {
-                  "X": 29.809375,
-                  "Y": 85.1296875
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 28.174609375,
-                  "Y": 85.53984375
-                },
-                "To": {
-                  "X": 26.440234375,
-                  "Y": 85.53984375
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 22.502734375,
-                  "Y": 85.53984375
-                },
-                "To": {
-                  "X": 20.205859375,
-                  "Y": 83.096484375
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 17.908984375,
-                  "Y": 80.653125
-                },
-                "To": {
-                  "X": 17.908984375,
-                  "Y": 76.46953125
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 17.908984375,
-                  "Y": 72.2390625
-                },
-                "To": {
-                  "X": 20.246875,
-                  "Y": 69.81328125
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 22.584765625,
-                  "Y": 67.3875
-                },
-                "To": {
-                  "X": 26.662890625,
-                  "Y": 67.3875
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 28.233203125,
-                  "Y": 67.3875
-                },
-                "To": {
-                  "X": 29.674609375,
-                  "Y": 67.715625
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 31.116015625,
-                  "Y": 68.04375
-                },
-                "To": {
-                  "X": 32.393359375,
-                  "Y": 68.68828125
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 32.393359375,
-                  "Y": 72.309375
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 31.069140625,
-                  "Y": 71.47734375
-                },
-                "To": {
-                  "X": 29.768359375,
-                  "Y": 71.0671875
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 28.467578125,
-                  "Y": 70.65703125
-                },
-                "To": {
-                  "X": 27.155078125,
-                  "Y": 70.65703125
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 24.729296875,
-                  "Y": 70.65703125
-                },
-                "To": {
-                  "X": 23.416796875,
-                  "Y": 72.162890625
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 22.104296875,
-                  "Y": 73.66875
-                },
-                "To": {
-                  "X": 22.104296875,
-                  "Y": 76.46953125
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 22.104296875,
-                  "Y": 79.246875
-                },
-                "To": {
-                  "X": 23.369921875,
-                  "Y": 80.75859375
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 24.635546875,
-                  "Y": 82.2703125
-                },
-                "To": {
-                  "X": 26.967578125,
-                  "Y": 82.2703125
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 27.600390625,
-                  "Y": 82.2703125
-                },
-                "To": {
-                  "X": 28.1453125,
-                  "Y": 82.182421875
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 28.690234375,
-                  "Y": 82.09453125
-                },
-                "To": {
-                  "X": 29.112109375,
-                  "Y": 81.90703125
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 29.112109375,
-                  "Y": 78.50859375
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 26.639453125,
-                  "Y": 78.50859375
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 26.639453125,
-                  "Y": 75.48515625
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 32.967578125,
-                  "Y": 75.48515625
+                  "X": 20.897998046875,
+                  "Y": 89
                 }
               },
               {
@@ -1888,257 +1740,43 @@
           },
           {
             "Start": {
-              "X": 43.434765625,
-              "Y": 74.47734375
+              "X": 37.309521484375,
+              "Y": 73.69091796875
             },
             "Segments": [
               {
-                "$type": "quad",
-                "C": {
-                  "X": 44.395703125,
-                  "Y": 74.47734375
-                },
+                "$type": "line",
                 "To": {
-                  "X": 44.89375,
-                  "Y": 74.00859375
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 45.391796875,
-                  "Y": 73.53984375
-                },
-                "To": {
-                  "X": 45.391796875,
-                  "Y": 72.62578125
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 45.391796875,
-                  "Y": 71.7234375
-                },
-                "To": {
-                  "X": 44.89375,
-                  "Y": 71.248828125
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 44.395703125,
-                  "Y": 70.77421875
-                },
-                "To": {
-                  "X": 43.434765625,
-                  "Y": 70.77421875
+                  "X": 40.867626953125,
+                  "Y": 73.69091796875
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 41.196484375,
-                  "Y": 70.77421875
+                  "X": 40.867626953125,
+                  "Y": 86.01611328125
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 41.196484375,
-                  "Y": 74.47734375
-                }
-              },
-              {
-                "$type": "close"
-              }
-            ],
-            "IsClosed": true
-          },
-          {
-            "Start": {
-              "X": 43.575390625,
-              "Y": 82.1296875
-            },
-            "Segments": [
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 44.805859375,
-                  "Y": 82.1296875
-                },
-                "To": {
-                  "X": 45.42109375,
-                  "Y": 81.55546875
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 46.036328125,
-                  "Y": 80.98125
-                },
-                "To": {
-                  "X": 46.036328125,
-                  "Y": 79.82109375
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 46.036328125,
-                  "Y": 78.684375
-                },
-                "To": {
-                  "X": 45.42109375,
-                  "Y": 78.116015625
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 44.805859375,
-                  "Y": 77.54765625
-                },
-                "To": {
-                  "X": 43.575390625,
-                  "Y": 77.54765625
+                  "X": 47.102001953125,
+                  "Y": 86.01611328125
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 41.196484375,
-                  "Y": 77.54765625
+                  "X": 47.102001953125,
+                  "Y": 89
                 }
               },
               {
                 "$type": "line",
                 "To": {
-                  "X": 41.196484375,
-                  "Y": 82.1296875
-                }
-              },
-              {
-                "$type": "close"
-              }
-            ],
-            "IsClosed": true
-          },
-          {
-            "Start": {
-              "X": 47.348828125,
-              "Y": 75.83671875
-            },
-            "Segments": [
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 48.661328125,
-                  "Y": 76.25859375
-                },
-                "To": {
-                  "X": 49.376171875,
-                  "Y": 77.3953125
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 50.091015625,
-                  "Y": 78.53203125
-                },
-                "To": {
-                  "X": 50.091015625,
-                  "Y": 80.184375
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 50.091015625,
-                  "Y": 82.715625
-                },
-                "To": {
-                  "X": 48.55,
-                  "Y": 83.9578125
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 47.008984375,
-                  "Y": 85.2
-                },
-                "To": {
-                  "X": 43.868359375,
-                  "Y": 85.2
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 37.130078125,
-                  "Y": 85.2
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 37.130078125,
-                  "Y": 67.70390625
-                }
-              },
-              {
-                "$type": "line",
-                "To": {
-                  "X": 43.223828125,
-                  "Y": 67.70390625
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 46.505078125,
-                  "Y": 67.70390625
-                },
-                "To": {
-                  "X": 47.97578125,
-                  "Y": 68.80546875
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 49.446484375,
-                  "Y": 69.90703125
-                },
-                "To": {
-                  "X": 49.446484375,
-                  "Y": 72.3328125
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 49.446484375,
-                  "Y": 73.61015625
-                },
-                "To": {
-                  "X": 48.91328125,
-                  "Y": 74.506640625
-                }
-              },
-              {
-                "$type": "quad",
-                "C": {
-                  "X": 48.380078125,
-                  "Y": 75.403125
-                },
-                "To": {
-                  "X": 47.348828125,
-                  "Y": 75.83671875
+                  "X": 37.309521484375,
+                  "Y": 89
                 }
               },
               {
@@ -2151,9 +1789,9 @@
         "Rule": "NonZero"
       },
       "Fill": {
-        "R": 244,
-        "G": 244,
-        "B": 244
+        "R": 242,
+        "G": 242,
+        "B": 242
       },
       "Transform": {
         "A": 1,
@@ -2180,8 +1818,8 @@
         "B": 0,
         "C": 0,
         "D": 1,
-        "E": 291,
-        "F": 95
+        "E": 284.5,
+        "F": 81.5
       }
     }
   ],
@@ -2189,12 +1827,12 @@
     {
       "Id": "plateNumber",
       "Label": "N\u00FAmero de matr\u00EDcula",
-      "Mask": "XXXX XXX",
+      "Mask": "XX-XX-XX",
       "AllowedLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-      "CharHeight": 79,
-      "Tracking": 61,
-      "SpaceTracking": 22,
-      "PreferredFontFamily": "CharlesWright-Bold",
+      "CharHeight": 53,
+      "Tracking": 47,
+      "SpaceTracking": 33,
+      "PreferredFontFamily": "Kenteken",
       "FallbackFontFamilies": [
         "Roboto Condensed",
         "Overpass"
@@ -2205,8 +1843,10 @@
       "RandomizeAsLetterAndDigitBlocks": false,
       "RandomMonthDigitsStart": null,
       "RandomTwoDigitYearDigits": null,
-      "AlternativeMasks": null,
-      "RandomizeAsAlternatingBlocks": false,
+      "AlternativeMasks": [
+        "XX-XXX-X"
+      ],
+      "RandomizeAsAlternatingBlocks": true,
       "DigitPadChar": null,
       "GlyphShapes": null
     }

@@ -3359,7 +3359,11 @@
       "RandomYearMin": null,
       "RandomizeAsLetterAndDigitBlocks": false,
       "RandomMonthDigitsStart": null,
-      "RandomTwoDigitYearDigits": null
+      "RandomTwoDigitYearDigits": null,
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": null,
+      "GlyphShapes": null
     },
     {
       "Id": "month",
@@ -3392,7 +3396,11 @@
       "RandomYearMin": null,
       "RandomizeAsLetterAndDigitBlocks": false,
       "RandomMonthDigitsStart": null,
-      "RandomTwoDigitYearDigits": null
+      "RandomTwoDigitYearDigits": null,
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": null,
+      "GlyphShapes": null
     },
     {
       "Id": "year",
@@ -3412,7 +3420,11 @@
       "RandomYearMin": 1990,
       "RandomizeAsLetterAndDigitBlocks": false,
       "RandomMonthDigitsStart": null,
-      "RandomTwoDigitYearDigits": null
+      "RandomTwoDigitYearDigits": null,
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": null,
+      "GlyphShapes": null
     }
   ]
 }

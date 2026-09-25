@@ -52,7 +52,7 @@ public class PortugalV1TemplateGeneratorTests
             CharHeight: 181,
             Tracking: 127,
             SpaceTracking: 51,
-            PreferredFontFamily: "DIN1451",
+            PreferredFontFamily: "Alte DIN 1451 Mittelschrift",
             // Condensed first: these cell widths are calibrated for a narrow plate font, and a wide
             // fallback overflows its cell into the next character.
             FallbackFontFamilies: ["Roboto Condensed", "Overpass"],

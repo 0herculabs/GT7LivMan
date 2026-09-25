@@ -1833,7 +1833,7 @@
       "CharHeight": 181,
       "Tracking": 127,
       "SpaceTracking": 51,
-      "PreferredFontFamily": "DIN1451",
+      "PreferredFontFamily": "Alte DIN 1451 Mittelschrift",
       "FallbackFontFamilies": [
         "Roboto Condensed",
         "Overpass"
@@ -1843,7 +1843,11 @@
       "RandomYearMin": null,
       "RandomizeAsLetterAndDigitBlocks": true,
       "RandomMonthDigitsStart": null,
-      "RandomTwoDigitYearDigits": null
+      "RandomTwoDigitYearDigits": null,
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": null,
+      "GlyphShapes": null
     }
   ]
 }

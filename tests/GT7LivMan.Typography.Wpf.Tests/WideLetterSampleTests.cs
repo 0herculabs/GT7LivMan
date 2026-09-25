@@ -54,7 +54,8 @@ public class WideLetterSampleTests
         // "W" in a proportional fallback font is wider than a plate cell; it must be squeezed
         // rather than allowed to overflow into the neighbouring character.
         const double tracking = 95;
-        var glyphs = Outliner.Outline("W", "DIN1451", ["Roboto Condensed", "Overpass"], charHeight: 142, tracking: tracking, spaceTracking: tracking);
+        // A family that's never installed, so the proportional fallback is what gets measured.
+        var glyphs = Outliner.Outline("W", "NotAnInstalledPlateFont", ["Roboto Condensed", "Overpass"], charHeight: 142, tracking: tracking, spaceTracking: tracking);
 
         var glyph = Assert.Single(glyphs);
         double min = double.MaxValue;

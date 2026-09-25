@@ -81,7 +81,7 @@ public class PortugalTemplateGeneratorTests
             // SVG's fixed separator dots — see the placement comment above.
             Tracking: 95,
             SpaceTracking: 67,
-            PreferredFontFamily: "DIN1451",
+            PreferredFontFamily: "Alte DIN 1451 Mittelschrift",
             // Condensed first: these cell widths are calibrated for DIN 1451's narrow proportions,
             // and a wide fallback (Overpass runs ~20% wider) overflows its cell and collides with
             // the next character.
@@ -101,7 +101,7 @@ public class PortugalTemplateGeneratorTests
             CharHeight: 50,
             Tracking: 37, // half the divider's 74-unit width — see the placement comment above
             SpaceTracking: 37, // unused — "9999" has no literal mask position
-            PreferredFontFamily: "DIN1451",
+            PreferredFontFamily: "Alte DIN 1451 Mittelschrift",
             FallbackFontFamilies: PlateFontFallbacks,
             // The first 2 digits are the inspection month (01-12), the last 2 the two-digit year —
             // Random License Plate should pick a real month and a plausible year (1990 up to the

@@ -18,7 +18,8 @@ public static class ExportEscalation
     /// comfort against any future change in the exact byte count, so this keeps escalating until
     /// there's real headroom rather than stopping at "technically under."
     /// </summary>
-    private static readonly double[] SimplifyTolerances = [2.0, 4.0, 8.0, 16.0];
+    /// <remarks>Starts gentle (0.5, 1): a plate that only just misses the target shouldn't jump straight to a tolerance that visibly facets its characters.</remarks>
+    private static readonly double[] SimplifyTolerances = [0.5, 1.0, 2.0, 4.0, 8.0, 16.0];
 
     public static string Write(Scene scene)
     {
@@ -43,7 +44,7 @@ public static class ExportEscalation
         {
             Scene simplified = scene with
             {
-                Elements = [.. scene.Elements.Select(e => e with { Path = PathDataSimplifier.Simplify(e.Path, tolerance) })],
+                Elements = [.. scene.Elements.Select(e => HasCurves(e.Path) ? e with { Path = PathDataSimplifier.Simplify(e.Path, tolerance) } : e)],
             };
             bestEffort = SvgWriter.Write(simplified, noDecimals);
             if (SizeBudget.IsWithinTarget(bestEffort))
@@ -56,4 +57,13 @@ public static class ExportEscalation
         // — by far the smallest of everything computed above — even if it didn't clear the target.
         return bestEffort;
     }
+
+    /// <summary>
+    /// Only curved paths (glyph outlines, traced art) are worth simplifying. A path of straight
+    /// lines and arcs is already about as small as it gets, and simplifying it only does damage:
+    /// an arc (a rounded corner) is replaced by its chord, and a thin shape (a 1-unit barcode bar)
+    /// collapses to a zero-area line once all its corners fall within the tolerance.
+    /// </summary>
+    private static bool HasCurves(PathData path) =>
+        path.SubPaths.Any(sub => sub.Segments.Any(seg => seg is Seg.Cubic or Seg.Quad));
 }

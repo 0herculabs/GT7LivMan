@@ -2150,7 +2150,7 @@
       "CharHeight": 142,
       "Tracking": 95,
       "SpaceTracking": 67,
-      "PreferredFontFamily": "DIN1451",
+      "PreferredFontFamily": "Alte DIN 1451 Mittelschrift",
       "FallbackFontFamilies": [
         "Roboto Condensed",
         "Overpass"
@@ -2160,7 +2160,11 @@
       "RandomYearMin": null,
       "RandomizeAsLetterAndDigitBlocks": true,
       "RandomMonthDigitsStart": null,
-      "RandomTwoDigitYearDigits": null
+      "RandomTwoDigitYearDigits": null,
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": null,
+      "GlyphShapes": null
     },
     {
       "Id": "inspectionDate",
@@ -2170,7 +2174,7 @@
       "CharHeight": 50,
       "Tracking": 37,
       "SpaceTracking": 37,
-      "PreferredFontFamily": "DIN1451",
+      "PreferredFontFamily": "Alte DIN 1451 Mittelschrift",
       "FallbackFontFamilies": [
         "Roboto Condensed",
         "Overpass"
@@ -2183,7 +2187,11 @@
       "RandomTwoDigitYearDigits": {
         "Start": 2,
         "MinTwoDigitYear": 90
-      }
+      },
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": null,
+      "GlyphShapes": null
     }
   ]
 }

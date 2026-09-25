@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1757" height="877" viewBox="0 0 1757 877">
+  <defs>
+    <clipPath id="clipPlate">
+      <rect x="14" y="14" width="1729" height="849" rx="40" ry="40"/>
+    </clipPath>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect x="14" y="14" width="1729" height="849" rx="40" ry="40" fill="#f4f4f4" filter="url(#shadow)"/>
+  <rect x="26" y="26" width="1705" height="825" rx="32" ry="32" fill="#fbfbfb" stroke="#dddddd" stroke-width="10"/>
+  <rect x="40" y="40" width="1677" height="797" rx="26" ry="26" fill="#f8f8f8" stroke="#ececec" stroke-width="4"/>
+
+  <g clip-path="url(#clipPlate)">
+    <!-- cleaner stylized US flag banner -->
+    <path d="M 40 52 H 760 C 832 52 894 56 946 67 C 1023 82 1081 84 1170 74 C 1304 59 1452 50 1717 56 V 168 C 1549 154 1390 151 1258 161 C 1146 169 1037 162 942 145 C 875 133 809 122 738 122 H 40 Z" fill="#9aadc3"/>
+    <path d="M 760 52 C 992 49 1181 67 1362 58 C 1510 52 1627 49 1717 58 V 98 C 1581 92 1470 96 1360 110 C 1238 125 1120 125 1000 111 C 921 102 843 95 760 94 Z" fill="#efc2c7"/>
+    <path d="M 1012 80 C 1182 73 1350 84 1518 82 C 1593 81 1659 84 1717 89 V 112 C 1598 107 1486 117 1370 121 C 1248 126 1136 118 1012 106 Z" fill="#ffffff" opacity="0.95"/>
+    <path d="M 1090 110 C 1248 104 1408 115 1569 115 C 1625 115 1675 117 1717 121 V 144 C 1598 140 1490 149 1375 151 C 1264 153 1173 148 1090 140 Z" fill="#efc2c7"/>
+    <path d="M 1225 141 C 1350 139 1475 150 1601 153 C 1644 154 1684 156 1717 159 V 182 C 1618 177 1527 181 1433 182 C 1350 183 1282 179 1225 172 Z" fill="#ffffff" opacity="0.96"/>
+
+    <!-- stars in blue field -->
+    <g fill="#ffffff" opacity="0.98">
+      <polygon points="104,70 110,84 125,85 114,95 117,110 104,102 91,110 94,95 83,85 98,84"/>
+      <polygon points="185,60 191,74 206,75 195,85 198,100 185,92 172,100 175,85 164,75 179,74"/>
+      <polygon points="276,52 282,66 297,67 286,77 289,92 276,84 263,92 266,77 255,67 270,66"/>
+      <polygon points="466,50 472,64 487,65 476,75 479,90 466,82 453,90 456,75 445,65 460,64"/>
+      <polygon points="653,76 659,90 674,91 663,101 666,116 653,108 640,116 643,101 632,91 647,90"/>
+      <polygon points="72,115 78,129 93,130 82,140 85,155 72,147 59,155 62,140 51,130 66,129"/>
+      <polygon points="160,110 166,124 181,125 170,135 173,150 160,142 147,150 150,135 139,125 154,124"/>
+      <polygon points="244,102 250,116 265,117 254,127 257,142 244,134 231,142 234,127 223,117 238,116"/>
+      <polygon points="341,100 347,114 362,115 351,125 354,140 341,132 328,140 331,125 320,115 335,114"/>
+      <polygon points="438,105 444,119 459,120 448,130 451,145 438,137 425,145 428,130 417,120 432,119"/>
+      <polygon points="535,112 541,126 556,127 545,137 548,152 535,144 522,152 525,137 514,127 529,126"/>
+      <polygon points="89,162 95,176 110,177 99,187 102,202 89,194 76,202 79,187 68,177 83,176"/>
+      <polygon points="194,155 200,169 215,170 204,180 207,195 194,187 181,195 184,180 173,170 188,169"/>
+      <polygon points="292,150 298,164 313,165 302,175 305,190 292,182 279,190 282,175 271,165 286,164"/>
+      <polygon points="402,146 408,160 423,161 412,171 415,186 402,178 389,186 392,171 381,161 396,160"/>
+      <polygon points="514,148 520,162 535,163 524,173 527,188 514,180 501,188 504,173 493,163 508,162"/>
+    </g>
+  </g>
+
+  <!-- texts -->
+  <text x="879" y="195" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="104" font-weight="700" fill="#182a66">IN GOD WE TRUST</text>
+  <text x="879" y="728" text-anchor="middle" font-family="STIX, Times New Roman, serif" font-size="64" font-style="italic" fill="#32306f">‘To Be Rather Than to Seem’</text>
+  <text x="880" y="836" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="138" font-weight="800" letter-spacing="3" fill="#e41d2d">NORTH CAROLINA</text>
+</svg>

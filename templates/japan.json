@@ -1,0 +1,1181 @@
+{
+  "SchemaVersion": "1",
+  "CountryCode": "JP",
+  "DisplayName": "Japan",
+  "Size": {
+    "Width": 500,
+    "Height": 250
+  },
+  "Elements": [
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 15.5,
+              "Y": 0
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 484.5,
+                  "Y": 0
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 15.5,
+                "Ry": 15.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 500,
+                  "Y": 15.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 500,
+                  "Y": 234.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 15.5,
+                "Ry": 15.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 484.5,
+                  "Y": 250
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 15.5,
+                  "Y": 250
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 15.5,
+                "Ry": 15.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 0,
+                  "Y": 234.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 0,
+                  "Y": 15.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 15.5,
+                "Ry": 15.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 15.5,
+                  "Y": 0
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 207,
+        "G": 207,
+        "B": 207
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 15.5,
+              "Y": 3
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 484.5,
+                  "Y": 3
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 12.5,
+                "Ry": 12.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 497,
+                  "Y": 15.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 497,
+                  "Y": 234.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 12.5,
+                "Ry": 12.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 484.5,
+                  "Y": 247
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 15.5,
+                  "Y": 247
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 12.5,
+                "Ry": 12.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 3,
+                  "Y": 234.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 3,
+                  "Y": 15.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 12.5,
+                "Ry": 12.5,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 15.5,
+                  "Y": 3
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 243,
+        "G": 243,
+        "B": 243
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 18.5,
+              "Y": 7.75
+            },
+            "Segments": [
+              {
+                "$type": "line",
+                "To": {
+                  "X": 481.5,
+                  "Y": 7.75
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 10.75,
+                "Ry": 10.75,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 492.25,
+                  "Y": 18.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 492.25,
+                  "Y": 231.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 10.75,
+                "Ry": 10.75,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 481.5,
+                  "Y": 242.25
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 18.5,
+                  "Y": 242.25
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 10.75,
+                "Ry": 10.75,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 7.75,
+                  "Y": 231.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 7.75,
+                  "Y": 18.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 10.75,
+                "Ry": 10.75,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 18.5,
+                  "Y": 7.75
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          },
+          {
+            "Start": {
+              "X": 18.5,
+              "Y": 9.25
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 9.25,
+                "Ry": 9.25,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 9.25,
+                  "Y": 18.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 9.25,
+                  "Y": 231.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 9.25,
+                "Ry": 9.25,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 18.5,
+                  "Y": 240.75
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 481.5,
+                  "Y": 240.75
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 9.25,
+                "Ry": 9.25,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 490.75,
+                  "Y": 231.5
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 490.75,
+                  "Y": 18.5
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 9.25,
+                "Ry": 9.25,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": false,
+                "To": {
+                  "X": 481.5,
+                  "Y": 9.25
+                }
+              },
+              {
+                "$type": "line",
+                "To": {
+                  "X": 18.5,
+                  "Y": 9.25
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 214,
+        "G": 214,
+        "B": 214
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 97.6,
+              "Y": 41
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 10.1,
+                "Ry": 10.1,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 77.4,
+                  "Y": 41
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 10.1,
+                "Ry": 10.1,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 97.6,
+                  "Y": 41
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 191,
+        "G": 191,
+        "B": 191
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 96.4,
+              "Y": 41
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 8.9,
+                "Ry": 8.9,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 78.6,
+                  "Y": 41
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 8.9,
+                "Ry": 8.9,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 96.4,
+                  "Y": 41
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 248,
+        "G": 248,
+        "B": 248
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 422.6,
+              "Y": 41
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 10.1,
+                "Ry": 10.1,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 402.4,
+                  "Y": 41
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 10.1,
+                "Ry": 10.1,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 422.6,
+                  "Y": 41
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 191,
+        "G": 191,
+        "B": 191
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "shape",
+      "Path": {
+        "SubPaths": [
+          {
+            "Start": {
+              "X": 421.4,
+              "Y": 41
+            },
+            "Segments": [
+              {
+                "$type": "arc",
+                "Rx": 8.9,
+                "Ry": 8.9,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 403.6,
+                  "Y": 41
+                }
+              },
+              {
+                "$type": "arc",
+                "Rx": 8.9,
+                "Ry": 8.9,
+                "XAxisRotationDeg": 0,
+                "LargeArc": false,
+                "SweepClockwise": true,
+                "To": {
+                  "X": 421.4,
+                  "Y": 41
+                }
+              },
+              {
+                "$type": "close"
+              }
+            ],
+            "IsClosed": true
+          }
+        ],
+        "Rule": "NonZero"
+      },
+      "Fill": {
+        "R": 248,
+        "G": 248,
+        "B": 248
+      },
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 0,
+        "F": 0
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "region",
+      "Fill": {
+        "R": 76,
+        "G": 134,
+        "B": 99
+      },
+      "CharStart": 0,
+      "CharCount": -1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 181.5,
+        "F": 78
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "classNumber",
+      "Fill": {
+        "R": 76,
+        "G": 134,
+        "B": 99
+      },
+      "CharStart": 0,
+      "CharCount": -1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 330.5,
+        "F": 81
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "hiragana",
+      "Fill": {
+        "R": 76,
+        "G": 134,
+        "B": 99
+      },
+      "CharStart": 0,
+      "CharCount": -1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 55,
+        "F": 195
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "serialNumber",
+      "Fill": {
+        "R": 76,
+        "G": 134,
+        "B": 99
+      },
+      "CharStart": 0,
+      "CharCount": 1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 144,
+        "F": 226.5
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "serialNumber",
+      "Fill": {
+        "R": 76,
+        "G": 134,
+        "B": 99
+      },
+      "CharStart": 1,
+      "CharCount": 1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 228.5,
+        "F": 226.5
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "serialNumber",
+      "Fill": {
+        "R": 76,
+        "G": 134,
+        "B": 99
+      },
+      "CharStart": 2,
+      "CharCount": 1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 289,
+        "F": 226.5
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "serialNumber",
+      "Fill": {
+        "R": 76,
+        "G": 134,
+        "B": 99
+      },
+      "CharStart": 3,
+      "CharCount": 1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 349,
+        "F": 226.5
+      }
+    },
+    {
+      "$type": "textField",
+      "FieldId": "serialNumber",
+      "Fill": {
+        "R": 76,
+        "G": 134,
+        "B": 99
+      },
+      "CharStart": 4,
+      "CharCount": 1,
+      "Anchor": "Center",
+      "Transform": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "E": 433.5,
+        "F": 226.5
+      }
+    }
+  ],
+  "Fields": [
+    {
+      "Id": "region",
+      "Label": "Oficina de registro",
+      "Mask": "AA",
+      "AllowedLetters": "\u54C1\u5DDD\u7DF4\u99AC\u8DB3\u7ACB\u591A\u6469\u6749\u4E26\u677F\u6A4B\u6C5F\u6771\u845B\u98FE\u6A2A\u6D5C\u5D0E\u6E58\u5357\u76F8\u6A21\u5927\u5BAE\u6240\u6CA2\u718A\u8C37\u8D8A\u53E3\u5343\u8449\u6210\u7530\u91CE\u6C34\u6238\u571F\u6D66\u7FA4\u9AD8\u5C71\u68A8\u9577\u677E\u672C\u65B0\u6F5F\u5CA1\u5BCC\u77F3\u91D1\u798F\u4E95\u5C90\u961C\u98DB\u9A28\u9759\u6CBC\u6D25\u8C4A\u4E09\u91CD\u9234\u9E7F\u6ECB\u8CC0\u4EAC\u90FD\u962A\u548C\u6CC9\u795E\u59EB\u8DEF\u5948\u826F\u9CE5\u53D6\u5CF6\u6839\u5009\u6577\u5E83\u4E0B\u95A2\u5FB3\u9999\u611B\u5A9B\u77E5\u7B51\u4F50\u5206\u6C96\u7E04\u672D\u5E4C\u51FD\u9928\u65ED\u5BA4\u862D\u91E7\u5E2F\u5317\u898B\u9752\u68EE\u516B\u5CA9\u624B\u57CE\u4ED9\u53F0\u79CB\u5F62\u5E84\u5185\u90E1",
+      "CharHeight": 52.4,
+      "Tracking": 73,
+      "SpaceTracking": 73,
+      "PreferredFontFamily": "Yu Gothic Bold",
+      "FallbackFontFamilies": [
+        "MS Gothic",
+        "Roboto Condensed",
+        "Overpass"
+      ],
+      "DropdownOptions": [
+        "\u54C1\u5DDD",
+        "\u7DF4\u99AC",
+        "\u8DB3\u7ACB",
+        "\u591A\u6469",
+        "\u6749\u4E26",
+        "\u677F\u6A4B",
+        "\u6C5F\u6771",
+        "\u845B\u98FE",
+        "\u6A2A\u6D5C",
+        "\u5DDD\u5D0E",
+        "\u6E58\u5357",
+        "\u76F8\u6A21",
+        "\u5927\u5BAE",
+        "\u6240\u6CA2",
+        "\u718A\u8C37",
+        "\u5DDD\u8D8A",
+        "\u5DDD\u53E3",
+        "\u5343\u8449",
+        "\u6210\u7530",
+        "\u91CE\u7530",
+        "\u6C34\u6238",
+        "\u571F\u6D66",
+        "\u7FA4\u99AC",
+        "\u9AD8\u5D0E",
+        "\u5C71\u68A8",
+        "\u9577\u91CE",
+        "\u677E\u672C",
+        "\u65B0\u6F5F",
+        "\u9577\u5CA1",
+        "\u5BCC\u5C71",
+        "\u77F3\u5DDD",
+        "\u91D1\u6CA2",
+        "\u798F\u4E95",
+        "\u5C90\u961C",
+        "\u98DB\u9A28",
+        "\u9759\u5CA1",
+        "\u6D5C\u677E",
+        "\u6CBC\u6D25",
+        "\u8C4A\u6A4B",
+        "\u5CA1\u5D0E",
+        "\u8C4A\u7530",
+        "\u4E09\u91CD",
+        "\u9234\u9E7F",
+        "\u6ECB\u8CC0",
+        "\u4EAC\u90FD",
+        "\u5927\u962A",
+        "\u548C\u6CC9",
+        "\u795E\u6238",
+        "\u59EB\u8DEF",
+        "\u5948\u826F",
+        "\u9CE5\u53D6",
+        "\u5CF6\u6839",
+        "\u5CA1\u5C71",
+        "\u5009\u6577",
+        "\u5E83\u5CF6",
+        "\u798F\u5C71",
+        "\u5C71\u53E3",
+        "\u4E0B\u95A2",
+        "\u5FB3\u5CF6",
+        "\u9999\u5DDD",
+        "\u611B\u5A9B",
+        "\u9AD8\u77E5",
+        "\u798F\u5CA1",
+        "\u7B51\u8C4A",
+        "\u4F50\u8CC0",
+        "\u9577\u5D0E",
+        "\u718A\u672C",
+        "\u5927\u5206",
+        "\u5BAE\u5D0E",
+        "\u6C96\u7E04",
+        "\u672D\u5E4C",
+        "\u51FD\u9928",
+        "\u65ED\u5DDD",
+        "\u5BA4\u862D",
+        "\u91E7\u8DEF",
+        "\u5E2F\u5E83",
+        "\u5317\u898B",
+        "\u9752\u68EE",
+        "\u516B\u6238",
+        "\u5CA9\u624B",
+        "\u5BAE\u57CE",
+        "\u4ED9\u53F0",
+        "\u79CB\u7530",
+        "\u5C71\u5F62",
+        "\u5E84\u5185",
+        "\u798F\u5CF6",
+        "\u90E1\u5C71"
+      ],
+      "RequireDropdownSelection": true,
+      "RandomYearMin": null,
+      "RandomizeAsLetterAndDigitBlocks": false,
+      "RandomMonthDigitsStart": null,
+      "RandomTwoDigitYearDigits": null,
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": null,
+      "GlyphShapes": null
+    },
+    {
+      "Id": "classNumber",
+      "Label": "N\u00FAmero de clasificaci\u00F3n",
+      "Mask": "9XX",
+      "AllowedLetters": "ACFHKLMPXY",
+      "CharHeight": 60.5,
+      "Tracking": 39.75,
+      "SpaceTracking": 39.75,
+      "PreferredFontFamily": "Yu Gothic Bold",
+      "FallbackFontFamilies": [
+        "MS Gothic",
+        "Roboto Condensed",
+        "Overpass"
+      ],
+      "DropdownOptions": [
+        "300",
+        "330",
+        "331",
+        "332",
+        "500",
+        "501",
+        "502",
+        "530",
+        "531",
+        "533",
+        "30A",
+        "50C"
+      ],
+      "RequireDropdownSelection": false,
+      "RandomYearMin": null,
+      "RandomizeAsLetterAndDigitBlocks": false,
+      "RandomMonthDigitsStart": null,
+      "RandomTwoDigitYearDigits": null,
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": null,
+      "GlyphShapes": null
+    },
+    {
+      "Id": "hiragana",
+      "Label": "Hiragana",
+      "Mask": "A",
+      "AllowedLetters": "\u3055\u3059\u305B\u305D\u305F\u3061\u3064\u3066\u3068\u306A\u306B\u306C\u306D\u306E\u306F\u3072\u3075\u307B\u307E\u307F\u3080\u3081\u3082\u3084\u3086\u3089\u308A\u308B",
+      "CharHeight": 56.5,
+      "Tracking": 45.3,
+      "SpaceTracking": 45.3,
+      "PreferredFontFamily": "Yu Gothic Bold",
+      "FallbackFontFamilies": [
+        "MS Gothic",
+        "Roboto Condensed",
+        "Overpass"
+      ],
+      "DropdownOptions": [
+        "\u3055",
+        "\u3059",
+        "\u305B",
+        "\u305D",
+        "\u305F",
+        "\u3061",
+        "\u3064",
+        "\u3066",
+        "\u3068",
+        "\u306A",
+        "\u306B",
+        "\u306C",
+        "\u306D",
+        "\u306E",
+        "\u306F",
+        "\u3072",
+        "\u3075",
+        "\u307B",
+        "\u307E",
+        "\u307F",
+        "\u3080",
+        "\u3081",
+        "\u3082",
+        "\u3084",
+        "\u3086",
+        "\u3089",
+        "\u308A",
+        "\u308B"
+      ],
+      "RequireDropdownSelection": true,
+      "RandomYearMin": null,
+      "RandomizeAsLetterAndDigitBlocks": false,
+      "RandomMonthDigitsStart": null,
+      "RandomTwoDigitYearDigits": null,
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": null,
+      "GlyphShapes": null
+    },
+    {
+      "Id": "serialNumber",
+      "Label": "N\u00FAmero de serie",
+      "Mask": "99-99",
+      "AllowedLetters": "",
+      "CharHeight": 122,
+      "Tracking": 71,
+      "SpaceTracking": 36,
+      "PreferredFontFamily": "Yu Gothic Bold",
+      "FallbackFontFamilies": [
+        "MS Gothic",
+        "Roboto Condensed",
+        "Overpass"
+      ],
+      "DropdownOptions": null,
+      "RequireDropdownSelection": false,
+      "RandomYearMin": null,
+      "RandomizeAsLetterAndDigitBlocks": false,
+      "RandomMonthDigitsStart": null,
+      "RandomTwoDigitYearDigits": null,
+      "AlternativeMasks": null,
+      "RandomizeAsAlternatingBlocks": false,
+      "DigitPadChar": "\u30FB",
+      "GlyphShapes": {
+        "-": {
+          "SubPaths": [
+            {
+              "Start": {
+                "X": -12.5,
+                "Y": -65.5
+              },
+              "Segments": [
+                {
+                  "$type": "line",
+                  "To": {
+                    "X": 12.5,
+                    "Y": -65.5
+                  }
+                },
+                {
+                  "$type": "arc",
+                  "Rx": 2,
+                  "Ry": 2,
+                  "XAxisRotationDeg": 0,
+                  "LargeArc": false,
+                  "SweepClockwise": true,
+                  "To": {
+                    "X": 14.5,
+                    "Y": -63.5
+                  }
+                },
+                {
+                  "$type": "line",
+                  "To": {
+                    "X": 14.5,
+                    "Y": -51.5
+                  }
+                },
+                {
+                  "$type": "arc",
+                  "Rx": 2,
+                  "Ry": 2,
+                  "XAxisRotationDeg": 0,
+                  "LargeArc": false,
+                  "SweepClockwise": true,
+                  "To": {
+                    "X": 12.5,
+                    "Y": -49.5
+                  }
+                },
+                {
+                  "$type": "line",
+                  "To": {
+                    "X": -12.5,
+                    "Y": -49.5
+                  }
+                },
+                {
+                  "$type": "arc",
+                  "Rx": 2,
+                  "Ry": 2,
+                  "XAxisRotationDeg": 0,
+                  "LargeArc": false,
+                  "SweepClockwise": true,
+                  "To": {
+                    "X": -14.5,
+                    "Y": -51.5
+                  }
+                },
+                {
+                  "$type": "line",
+                  "To": {
+                    "X": -14.5,
+                    "Y": -63.5
+                  }
+                },
+                {
+                  "$type": "arc",
+                  "Rx": 2,
+                  "Ry": 2,
+                  "XAxisRotationDeg": 0,
+                  "LargeArc": false,
+                  "SweepClockwise": true,
+                  "To": {
+                    "X": -12.5,
+                    "Y": -65.5
+                  }
+                },
+                {
+                  "$type": "close"
+                }
+              ],
+              "IsClosed": true
+            }
+          ],
+          "Rule": "NonZero"
+        },
+        "\u30FB": {
+          "SubPaths": [
+            {
+              "Start": {
+                "X": 8.5,
+                "Y": -58
+              },
+              "Segments": [
+                {
+                  "$type": "arc",
+                  "Rx": 8.5,
+                  "Ry": 8.5,
+                  "XAxisRotationDeg": 0,
+                  "LargeArc": false,
+                  "SweepClockwise": true,
+                  "To": {
+                    "X": -8.5,
+                    "Y": -58
+                  }
+                },
+                {
+                  "$type": "arc",
+                  "Rx": 8.5,
+                  "Ry": 8.5,
+                  "XAxisRotationDeg": 0,
+                  "LargeArc": false,
+                  "SweepClockwise": true,
+                  "To": {
+                    "X": 8.5,
+                    "Y": -58
+                  }
+                },
+                {
+                  "$type": "close"
+                }
+              ],
+              "IsClosed": true
+            }
+          ],
+          "Rule": "NonZero"
+        }
+      }
+    }
+  ]
+}

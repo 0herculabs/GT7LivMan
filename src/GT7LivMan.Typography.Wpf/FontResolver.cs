@@ -1,4 +1,5 @@
 using System.IO;
+using System.Windows;
 using System.Windows.Media;
 
 namespace GT7LivMan.Typography.Wpf;
@@ -38,10 +39,36 @@ public sealed class FontResolver(string? fontsFolder = null, string? bundledFont
             }
         }
 
-        throw new InvalidOperationException(
-            $"Could not resolve font '{preferredFamily}' or any fallback ({string.Join(", ", fallbackFamilies)}) " +
-            $"from '{_fontsFolder}', installed system fonts, or '{_bundledFontsFolder}'.");
+        throw NotFound(preferredFamily, fallbackFamilies);
     }
+
+    /// <summary>
+    /// Every family in the list that resolves, preferred first then each fallback in order — for
+    /// per-character fallback, where a glyph the first font lacks (FZ's empty せ, hyphen and dot)
+    /// is taken from the next one that has it.
+    /// </summary>
+    public IReadOnlyList<FontResolution> ResolveAll(string preferredFamily, IReadOnlyList<string> fallbackFamilies)
+    {
+        var chain = new List<FontResolution>();
+        if (TryResolveFamily(preferredFamily, out FontResolution preferred, isFallback: false))
+        {
+            chain.Add(preferred);
+        }
+
+        foreach (string fallback in fallbackFamilies)
+        {
+            if (TryResolveFamily(fallback, out FontResolution resolved, isFallback: true))
+            {
+                chain.Add(resolved);
+            }
+        }
+
+        return chain.Count > 0 ? chain : throw NotFound(preferredFamily, fallbackFamilies);
+    }
+
+    private InvalidOperationException NotFound(string preferredFamily, IReadOnlyList<string> fallbackFamilies) => new(
+        $"Could not resolve font '{preferredFamily}' or any fallback ({string.Join(", ", fallbackFamilies)}) " +
+        $"from '{_fontsFolder}', installed system fonts, or '{_bundledFontsFolder}'.");
 
     private bool TryResolveFamily(string familyName, out FontResolution resolution, bool isFallback)
     {
@@ -139,21 +166,45 @@ public sealed class FontResolver(string? fontsFolder = null, string? bundledFont
     private static string Normalize(string name) =>
         new([.. name.Where(char.IsLetterOrDigit).Select(char.ToLowerInvariant)]);
 
+    /// <summary>
+    /// An installed family, upright. A weight named in <paramref name="familyName"/> ("Yu Gothic
+    /// Bold", which WPF resolves to the Yu Gothic family) picks that face; otherwise the regular
+    /// one — not just whichever face the family lists first, which for Yu Gothic is Light.
+    /// </summary>
     private static bool TryResolveFromSystem(string familyName, out GlyphTypeface typeface)
     {
         typeface = null!;
-        var family = new FontFamily(familyName);
-        foreach (Typeface candidate in family.GetTypefaces())
+
+        // TryGetGlyphTypeface returns false for a synthesized bold/italic (no real glyph data) — skip those.
+        var faces = new List<(Typeface Face, GlyphTypeface Glyphs)>();
+        foreach (Typeface candidate in new FontFamily(familyName).GetTypefaces())
         {
-            // TryGetGlyphTypeface returns false for a synthesized bold/italic (no real glyph data) — skip those.
-            if (candidate.TryGetGlyphTypeface(out GlyphTypeface? gt))
+            if (candidate.Style == FontStyles.Normal && candidate.TryGetGlyphTypeface(out GlyphTypeface? gt))
             {
-                typeface = gt;
-                return true;
+                faces.Add((candidate, gt));
             }
         }
 
-        return false;
+        if (faces.Count == 0)
+        {
+            return false;
+        }
+
+        FontWeight wanted = RequestedWeight(familyName);
+        typeface = (faces.FirstOrDefault(f => f.Face.Weight == wanted).Glyphs
+            ?? faces.FirstOrDefault(f => f.Face.Weight == FontWeights.Normal).Glyphs
+            ?? faces[0].Glyphs);
+        return true;
+    }
+
+    private static FontWeight RequestedWeight(string familyName)
+    {
+        string name = familyName.ToLowerInvariant();
+        return name.EndsWith(" bold", StringComparison.Ordinal) ? FontWeights.Bold
+            : name.EndsWith(" semibold", StringComparison.Ordinal) ? FontWeights.SemiBold
+            : name.EndsWith(" medium", StringComparison.Ordinal) ? FontWeights.Medium
+            : name.EndsWith(" light", StringComparison.Ordinal) ? FontWeights.Light
+            : FontWeights.Normal;
     }
 
 }

@@ -7,7 +7,7 @@ namespace GT7LivMan.Core.Svg;
 /// <summary>
 /// Imports a static, hand-authored SVG template into flat, fully-transformed (Path, Fill) shapes
 /// in paint order. Understands only the subset of SVG our base plate art actually uses —
-/// g/path/rect/circle/ellipse/polygon with fill, fill-rule on path, stroke(+width) on rect, and
+/// g/path/rect/circle/ellipse/polygon with fill, fill-rule on path, stroke(+width) on rect/circle, and
 /// transform composition — and throws on anything else so an unsupported feature in a future
 /// template fails loudly at import time instead of silently dropping content.
 /// </summary>
@@ -29,7 +29,10 @@ public static class SvgReader
         {
             Affine2 own = SvgTransformParser.Parse(el.Attribute("transform")?.Value);
             Affine2 effective = ambient * own;
-            RgbColor? fill = ParseFillOrNull(el.Attribute("fill")?.Value) ?? inheritedFill;
+            // An explicit fill="none" means no fill even inside a filled <g> (Argentina's Mercosur
+            // arc is a bare stroke inside the white stars' group) — it must not inherit.
+            string? fillAttr = el.Attribute("fill")?.Value;
+            RgbColor? fill = fillAttr == "none" ? null : ParseFillOrNull(fillAttr) ?? inheritedFill;
 
             switch (el.Name.LocalName)
             {
@@ -122,6 +125,17 @@ public static class SvgReader
                     double cy = ReadNum(el, "cy", 0);
                     double r = ReadNum(el, "r", 0);
                     RgbColor circleFill = fill ?? throw new FormatException("<circle> has no fill (and none inherited).");
+                    double circleStrokeWidth = ReadNum(el, "stroke-width", 0);
+                    if (ParseFillOrNull(el.Attribute("stroke")?.Value) is { } circleStroke && circleStrokeWidth > 0)
+                    {
+                        // Same as a filled+stroked <rect>: two concentric solid shapes, the stroke
+                        // straddling the outline (e.g. a bolt hole's rim).
+                        double half = circleStrokeWidth / 2;
+                        sink.Add((PathDataTransform.Apply(Shapes.Circle(cx, cy, r + half), effective), circleStroke));
+                        sink.Add((PathDataTransform.Apply(Shapes.Circle(cx, cy, Math.Max(0, r - half)), effective), circleFill));
+                        break;
+                    }
+
                     PathData circle = Shapes.Circle(cx, cy, r);
                     sink.Add((PathDataTransform.Apply(circle, effective), circleFill));
                     break;
